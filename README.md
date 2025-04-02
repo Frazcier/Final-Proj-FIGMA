@@ -1,8 +1,9 @@
 # Final Project - Figma Design Implementation
-## 📅 **Course:** IT 115.1(LAB) - Human and Computer Interaction ## 
 
 ![Project Logo](https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/IMAGES/LOGO/for-guthib.png)
 
+
+## 📅 **Course:** IT 115.1(LAB) - Human and Computer Interaction
 ## 👩‍💻 **Team Members:**  
 - **Arian Dave Abat**  
 - **Wilmoore Dorencio**  
@@ -20,6 +21,7 @@
 - **Git**  
 - **Visual Studio**  
 
+
 ## 📥 Installation & Setup
 1. Clone the repository:
    ```sh
@@ -30,6 +32,7 @@
    cd Final-Proj-FIGMA
    ```
 3. Open the HTML folder and select which file you want to see.
+
 
 ## **🚀 How to Contribute** 
 
@@ -70,6 +73,7 @@
 4. Click **"Create pull request"**
 
 ### 🚀 Once approved, your changes will be merged! 🎉
+
 
 ## 📄 License
 This project is for academic purposes under **IT 115.1 (HCI)**.

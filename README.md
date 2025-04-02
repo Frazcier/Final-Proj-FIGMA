@@ -71,7 +71,7 @@
 3. Add a description of your changes.
 4. Click **"Create pull request"**
 
-### 🚀 Once approved, your changes will be merged! 🎉
+**🚀 Once approved, your changes will be merged! 🎉**
 
 
 ## 📄 License

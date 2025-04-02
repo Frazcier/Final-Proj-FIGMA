@@ -1,33 +1,77 @@
 # Final Project - Figma Design Implementation
 
-![Project Logo](IMAGES/project-logo.png)
+![Project Logo](https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/IMAGES/LOGO/logo.png)
 
-## Project Overview
+##📅 **Course:** IT 115.1(LAB) - Human and Computer Interaction  
+##👩‍💻 **Team Members:**  
+- [Arian Dave Abat]  
+- [Wilmoore Dorencio]  
+- [Dan Anilov Fontanos]  
+- [Raven Jesrael Garcia]
+- [Joshua Labian]  
 
-The Final Project is a responsive website developed to implement a design created in Figma. It aims to accurately translate the visual elements from the Figma design into functional HTML and CSS code, showcasing the ability to convert design concepts into a working web interface.
+---
 
-## ✨ Features
+## **🛠️ Technologies Used**  
+- **HTML**  
+- **CSS**  
+- **JavaScript**  
+- **Figma**  
+- **Git**  
+- **Visual Studio**  
 
-- **Responsive Design** – Ensures optimal viewing and interaction across various devices and screen sizes.
-- **Semantic HTML** – Utilizes HTML5 elements to enhance the meaning and accessibility of the web content.
-- **CSS Styling** – Applies modern CSS techniques for layout and design consistency.
-- **Image Assets** – Incorporates images and graphics as per the original Figma design.
+## 📥 Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone [https://github.com/Frazcier/Final-Proj-FIGMA.git]
+   ```
+2. Open the project folder:
+   ```sh
+   cd Final-Proj-FIGMA
+   ```
+3. Open the HTML folder and select which file you want to see.
 
-## 🛠️ Technologies Used
+## **🚀 How to Contribute** 
 
-- **HTML5** – Provides the structure of the website.
-- **CSS3** – Handles the styling and layout of the website.
-- **No JavaScript** – The project is built using only HTML and CSS for simplicity and focus on design implementation.
+### **🔹 1. Fork the Repository**  
+1. Go to the **GitHub repository**: [https://github.com/Frazcier/Final-Proj-FIGMA.git]
+2. Click the **"Fork"** button (top-right corner) to create your copy of the repository.
 
-## 🚀 Live Demo
-
-[Click here to view the live site](#)
-
-## 🛠️ Installation & Setup
-
-To view the project locally:
-
-1. **Clone the repository:**
-
-   ```bash
+### **🔹 2. Clone Your Fork**
+   ```sh
    git clone https://github.com/Frazcier/Final-Proj-FIGMA.git
+   cd Final-Proj-FIGMA
+   ```
+
+### **🔹 3. Create a New Branch**
+   ```sh
+    git checkout -b feature-new-update
+   ```
+
+### **🔹 4. Make Your Changes**
+1. Edit files, add new pages, or fix pages.
+2. Save your changes.
+
+### **🔹 5. Commit Your Changes**
+   ```sh
+   git add .
+   git commit -m "Added new page/fixed a page"
+   ```
+
+### **🔹 6. Push Your Changes**
+   ```sh
+   git push origin feature-new-update
+   ```
+
+### **🔹 7. Submit a Pull Request**
+1. Go to the original Github Repository
+2. Click **"Compare & pull request"**.
+3. Add a description of your changes.
+4. Click **"Create pull request"**
+
+###🚀 Once approved, your changes will be merged! 🎉
+
+## 📄 License
+This project is for academic purposes under **IT 115.1 (HCI)**.
+
+---

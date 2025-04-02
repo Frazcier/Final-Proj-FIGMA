@@ -2,8 +2,8 @@
 
 ![Project Logo](https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/IMAGES/LOGO/logo.png)
 
-##📅 **Course:** IT 115.1(LAB) - Human and Computer Interaction  
-##👩‍💻 **Team Members:**  
+## 📅 **Course:** IT 115.1(LAB) - Human and Computer Interaction  
+## 👩‍💻 **Team Members:**  
 - [Arian Dave Abat]  
 - [Wilmoore Dorencio]  
 - [Dan Anilov Fontanos]  
@@ -69,7 +69,7 @@
 3. Add a description of your changes.
 4. Click **"Create pull request"**
 
-###🚀 Once approved, your changes will be merged! 🎉
+### 🚀 Once approved, your changes will be merged! 🎉
 
 ## 📄 License
 This project is for academic purposes under **IT 115.1 (HCI)**.

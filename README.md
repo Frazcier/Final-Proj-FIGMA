@@ -1,6 +1,6 @@
 # Final Project - Figma Design Implementation
 
-![Project Logo](https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/IMAGES/LOGO/for-guthib-2.png)
+![Project Logo](https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/IMAGES/LOGO/for-guthib2.png)
 ### 📅 **Course:** IT 115.1(LAB) - Human and Computer Interaction  
 ### 👩‍💻 **Team Members:**  
 - **Arian Dave Abat**  

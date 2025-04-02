@@ -37,8 +37,7 @@
 ## **🚀 How to Contribute** 
 
 ### **🔹 1. Fork the Repository**  
-1. Go to the **GitHub repository**: [https://github.com/Frazcier/Final-Proj-FIGMA.git]
-2. Click the **"Fork"** button (top-right corner) to create your copy of the repository.
+1. Click the **"Fork"** button (top-right corner) to create your copy of the repository.
 
 ### **🔹 2. Clone Your Fork**
    ```sh

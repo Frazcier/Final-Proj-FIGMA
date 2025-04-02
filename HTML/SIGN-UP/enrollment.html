@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, width=device-width" />
+
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+		/>
+
+		<style>
+			.button {
+				position: absolute;
+				top: 2.313rem;
+				left: 7.875rem;
+				letter-spacing: 0.15em;
+				line-height: 100%;
+				cursor: pointer;
+			}
+			.description {
+				position: absolute;
+				top: calc(50% - 28.5px);
+				left: calc(50% - 160px);
+				font-size: 1.125rem;
+				letter-spacing: 0.2em;
+				line-height: 100%;
+				color: #333;
+			}
+			.login {
+				position: absolute;
+				top: 48.813rem;
+				left: 46.313rem;
+				width: 20rem;
+				height: 3.563rem;
+				color: #9400d3;
+			}
+			.button2 {
+				position: relative;
+				line-height: 100%;
+			}
+			.button1 {
+				position: absolute;
+				height: 6.67%;
+				top: 86.67%;
+				bottom: 6.67%;
+				left: calc(50% - 160px);
+				border-radius: 8px;
+				background-color: #9400d3;
+				width: 20rem;
+				overflow: hidden;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				padding: 0.75rem;
+				box-sizing: border-box;
+				color: #fffcfc;
+			}
+			.value {
+				flex: 1;
+				position: relative;
+				letter-spacing: 0.05em;
+				line-height: 100%;
+				font-weight: 500;
+			}
+			.input {
+				align-self: stretch;
+				flex: 1;
+				border-radius: 8px;
+				background-color: #eee;
+				border: 2px solid #eee;
+				box-sizing: border-box;
+				overflow: hidden;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+				padding: 0.75rem 1rem;
+				min-width: 15rem;
+			}
+			.input-field {
+				position: absolute;
+				top: calc(50% - 15px);
+				left: calc(50% - 160px);
+				width: 20rem;
+				height: 3.75rem;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+			}
+			.title {
+				position: absolute;
+				top: 0rem;
+				left: 0rem;
+				letter-spacing: 0.05em;
+				line-height: 100%;
+				font-weight: 500;
+				color: #333;
+			}
+			.permanent-address {
+				position: absolute;
+				top: calc(50% + 27.5px);
+				left: calc(50% + 190.5px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.email-address {
+				position: absolute;
+				top: calc(50% + 27.5px);
+				left: calc(50% - 159.5px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.gender {
+				position: absolute;
+				top: calc(50% + 27.5px);
+				left: calc(50% - 510.5px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.title3 {
+				position: absolute;
+				top: 0rem;
+				left: 0.063rem;
+				letter-spacing: 0.05em;
+				line-height: 100%;
+				font-weight: 500;
+				color: #333;
+			}
+			.contact-number {
+				position: absolute;
+				top: calc(50% - 82.5px);
+				left: calc(50% + 189.5px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.text {
+				position: absolute;
+				top: 1.25rem;
+				left: 1rem;
+				letter-spacing: 0.05em;
+				line-height: 100%;
+				font-weight: 500;
+			}
+			.year {
+				position: absolute;
+				height: 66.67%;
+				width: 29.81%;
+				top: 33.33%;
+				right: 0%;
+				bottom: 0%;
+				left: 70.19%;
+				border-radius: 8px;
+				background-color: #eee;
+				overflow: hidden;
+			}
+			.day {
+				position: absolute;
+				height: 66.67%;
+				width: 29.81%;
+				top: 33.33%;
+				right: 35.02%;
+				bottom: 0%;
+				left: 35.17%;
+				border-radius: 8px;
+				background-color: #eee;
+				overflow: hidden;
+			}
+			.chevron-down-icon {
+				position: absolute;
+				top: 1.125rem;
+				left: 10rem;
+				width: 1.5rem;
+				height: 1.5rem;
+				overflow: hidden;
+			}
+			.month {
+				position: absolute;
+				height: 66.67%;
+				width: 29.81%;
+				top: 33.33%;
+				right: 70.19%;
+				bottom: 0%;
+				left: 0%;
+				border-radius: 8px;
+				background-color: #eee;
+				overflow: hidden;
+			}
+			.birthdate {
+				position: absolute;
+				height: 38.3%;
+				width: 65.72%;
+				top: 14.89%;
+				right: 34.28%;
+				bottom: 46.81%;
+				left: 0%;
+			}
+			.divider-icon {
+				position: absolute;
+				top: 0.625rem;
+				left: 0rem;
+				max-height: 100%;
+				width: 23.75rem;
+			}
+			.student-information1 {
+				position: absolute;
+				top: 0rem;
+				left: calc(50% - 105px);
+				line-height: 100%;
+			}
+			.divider-icon1 {
+				position: absolute;
+				top: 0.625rem;
+				left: 40rem;
+				max-height: 100%;
+				width: 23.75rem;
+			}
+			.text3 {
+				position: absolute;
+				top: 0rem;
+				left: 0.063rem;
+				width: 63.75rem;
+				height: 1.25rem;
+				color: #333;
+			}
+			.student-information {
+				position: absolute;
+				top: calc(50% + 60px);
+				left: calc(50% - 510px);
+				width: 63.813rem;
+				height: 14.688rem;
+			}
+			.input-field4 {
+				position: absolute;
+				top: calc(50% - 10px);
+				left: calc(50% + 190px);
+				width: 20rem;
+				height: 3.75rem;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+			}
+			.input-field5 {
+				position: absolute;
+				top: calc(50% - 10px);
+				left: calc(50% - 160px);
+				width: 20rem;
+				height: 3.75rem;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+			}
+			.input-field6 {
+				position: absolute;
+				top: calc(50% - 10px);
+				left: calc(50% - 510px);
+				width: 20rem;
+				height: 3.75rem;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				font-family: Inter;
+			}
+			.title5 {
+				position: absolute;
+				top: 0rem;
+				left: calc(50% - 51px);
+				line-height: 100%;
+			}
+			.divider-icon2 {
+				position: absolute;
+				top: 0.625rem;
+				left: 36.25rem;
+				width: 27.5rem;
+				height: 0.063rem;
+				object-fit: contain;
+			}
+			.divider-icon3 {
+				position: absolute;
+				top: 0.563rem;
+				left: 0rem;
+				width: 27.5rem;
+				height: 0.063rem;
+				object-fit: contain;
+			}
+			.student-name {
+				position: absolute;
+				top: 0rem;
+				left: calc(50% - 510px);
+				width: 63.75rem;
+				height: 1.25rem;
+				color: #333;
+			}
+			.full-name {
+				position: absolute;
+				top: 23.75rem;
+				left: 2.5rem;
+				width: 63.75rem;
+				height: 6.25rem;
+				overflow: hidden;
+			}
+			.subjects {
+				position: absolute;
+				top: calc(50% + 20px);
+				left: calc(50% + 190px);
+				width: 20rem;
+				height: 5.625rem;
+				font-family: Poppins;
+			}
+			.title7 {
+				position: absolute;
+				top: 0rem;
+				left: 0rem;
+				letter-spacing: 0.05em;
+				line-height: 100%;
+				font-weight: 500;
+				font-family: Poppins;
+				color: #333;
+			}
+			.year-level {
+				position: absolute;
+				top: calc(50% + 20px);
+				left: calc(50% - 160px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.semester {
+				position: absolute;
+				top: calc(50% + 20px);
+				left: calc(50% - 510px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.section {
+				position: absolute;
+				top: calc(50% - 90px);
+				left: calc(50% + 190px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.course {
+				position: absolute;
+				top: calc(50% - 90px);
+				left: calc(50% - 160px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.school-year {
+				position: absolute;
+				top: calc(50% - 90px);
+				left: calc(50% - 510px);
+				width: 20rem;
+				height: 5.625rem;
+			}
+			.divider-icon4 {
+				position: absolute;
+				top: 0rem;
+				left: 0rem;
+				max-height: 100%;
+				width: 63.75rem;
+			}
+			.school-req {
+				position: absolute;
+				top: 8.125rem;
+				left: 2.5rem;
+				width: 63.75rem;
+				height: 13.75rem;
+				overflow: hidden;
+				font-family: Inter;
+			}
+			.enrollment-form {
+				position: absolute;
+				top: 0rem;
+				left: calc(50% - 550px);
+				border-radius: 50px;
+				background-color: #fff;
+				width: 68.75rem;
+				height: 56.25rem;
+				overflow: hidden;
+			}
+			.title12 {
+				position: absolute;
+				top: calc(50% - 400px);
+				left: calc(50% - 135px);
+				font-size: 3rem;
+				line-height: 1.75rem;
+				color: #333;
+			}
+			.container {
+				width: 100%;
+				position: relative;
+				box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.25);
+				border-radius: 50px;
+				background-color: #fff;
+				height: 56.25rem;
+				overflow: hidden;
+				text-align: left;
+				font-size: 1.25rem;
+				color: rgba(51, 51, 51, 0.5);
+				font-family: Poppins;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="enrollment-form">
+				<div class="login">
+					<b class="button" id="buttonText">Login</b>
+					<div class="description">Already have an account?</div>
+				</div>
+				<div class="button1">
+					<b class="button2">Enroll</b>
+				</div>
+				<div class="student-information">
+					<div class="permanent-address">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Permanent Address</div>
+							</div>
+						</div>
+						<div class="title">Permanent Address</div>
+					</div>
+					<div class="email-address">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Email Address</div>
+							</div>
+						</div>
+						<div class="title">Email Address</div>
+					</div>
+					<div class="gender">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Gender</div>
+							</div>
+						</div>
+						<div class="title">Gender</div>
+					</div>
+					<div class="contact-number">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Contact Number</div>
+							</div>
+						</div>
+						<div class="title3">Contact Number</div>
+					</div>
+					<div class="birthdate">
+						<div class="year">
+							<div class="text">Year</div>
+						</div>
+						<div class="day">
+							<div class="text">Day</div>
+						</div>
+						<div class="month">
+							<img class="chevron-down-icon" alt="" src="Chevron Down.svg" />
+
+							<div class="text">Month</div>
+						</div>
+						<div class="title">Birthdate</div>
+					</div>
+					<div class="text3">
+						<img class="divider-icon" alt="" src="Divider.svg" />
+
+						<b class="student-information1">Student Information</b>
+						<img class="divider-icon1" alt="" src="Divider.svg" />
+					</div>
+				</div>
+				<div class="full-name">
+					<div class="input-field4">
+						<div class="input">
+							<div class="value">Middle Name</div>
+						</div>
+					</div>
+					<div class="input-field5">
+						<div class="input">
+							<div class="value">Last Name</div>
+						</div>
+					</div>
+					<div class="input-field6">
+						<div class="input">
+							<div class="value">First Name</div>
+						</div>
+					</div>
+					<div class="student-name">
+						<b class="title5">Full Name</b>
+						<img class="divider-icon2" alt="" src="Divider.svg" />
+
+						<img class="divider-icon3" alt="" src="Divider.svg" />
+					</div>
+				</div>
+				<div class="school-req">
+					<div class="subjects">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Subjects</div>
+							</div>
+						</div>
+						<div class="title">Subjects</div>
+					</div>
+					<div class="year-level">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Year Level</div>
+							</div>
+						</div>
+						<div class="title7">Year Level</div>
+					</div>
+					<div class="semester">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Semester</div>
+							</div>
+						</div>
+						<div class="title7">Semester</div>
+					</div>
+					<div class="section">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Section</div>
+							</div>
+						</div>
+						<div class="title7">Section</div>
+					</div>
+					<div class="course">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">Course</div>
+							</div>
+						</div>
+						<div class="title7">Course</div>
+					</div>
+					<div class="school-year">
+						<div class="input-field">
+							<div class="input">
+								<div class="value">School Year</div>
+							</div>
+						</div>
+						<div class="title7">School Year</div>
+					</div>
+					<img class="divider-icon4" alt="" src="Divider.svg" />
+				</div>
+			</div>
+			<b class="title12">Enrollment</b>
+		</div>
+
+		<script>
+			var buttonText = document.getElementById("buttonText");
+			if (buttonText) {
+				buttonText.addEventListener("click", function (e) {
+					// Add your code here
+				});
+			}
+		</script>
+	</body>
+</html>

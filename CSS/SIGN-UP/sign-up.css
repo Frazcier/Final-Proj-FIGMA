@@ -1,0 +1,169 @@
+body {
+    background: linear-gradient(var(--secondary-color), var(--secondary-color)), #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: max-content;
+    margin: 3rem;
+    padding: 3rem 0;
+    border-radius: 2rem;
+    background: var(--background-light);
+    box-shadow: 0 0 6.25rem 1.25rem var(--background-shadow);
+
+    & h1 {
+        width: 80%;
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 0.1rem solid var(--color-lightgrey-text);
+    }
+}
+
+h2 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+h2::before, h2::after {
+    content: "";
+    flex: 1;
+    border-top: 0.1rem solid var(--color-lightgrey-text);
+}
+
+h2::before {
+    margin-right: 1rem;
+}
+
+h2::after {
+    margin-left: 1rem;
+}
+
+p {
+    font-weight: 500;
+}
+
+input {
+    width: 16rem;
+    background: var(--background-grey);
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+}
+
+.school-requirements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    position: relative;
+
+    & :is(.content-row-1, .content-row-2) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        & :is(.item-1, .item-2, .item-3) {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+
+        }
+    }
+
+    & .content-row-1 {
+        margin-top: 1rem;
+    }
+}
+
+.full-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 80%;
+
+    & .content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1rem;
+        gap: 1.6rem;
+    }
+}
+
+.student-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 1rem;
+
+    & :is(.content-row-1, .content-row-2) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    & .content-row-2 {
+        margin-top: 1rem;
+    }
+
+    & .item-1 {
+        & .inputs {
+            display: flex;
+            gap: 0.9rem;
+        }
+
+        & .inputs > * {
+            width: 11rem;
+        }
+    }
+}
+
+.buttons {
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+    height: 2.5rem;
+
+    & .login {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(-10%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            letter-spacing: 0.2rem;
+            font-weight: unset;
+        }
+
+        & a {
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            color: var(--primary-color);
+        }
+    }
+
+    & button {
+        position: absolute;
+        width: 16rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0.8rem 0;
+        background-color: var(--primary-color);
+    }
+}

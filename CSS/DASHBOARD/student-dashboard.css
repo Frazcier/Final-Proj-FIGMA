@@ -1,0 +1,9 @@
+body {
+    grid: 1 2;
+}
+
+:is(.top-navigation, .side-navigation) {
+    background: var(--background-grey);
+}
+
+    

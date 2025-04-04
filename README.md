@@ -25,7 +25,7 @@
 ## 📥 Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone [https://github.com/Frazcier/Final-Proj-FIGMA.git]
+   git clone https://github.com/Frazcier/Final-Proj-FIGMA.git
    ```
 2. Open the project folder:
    ```sh

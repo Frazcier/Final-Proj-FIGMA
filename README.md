@@ -78,10 +78,10 @@
    ```
 
 ### **🔹 7. Submit a Pull Request**
-1. Go to the original Github Repository
+1. Go to the original GitHub repository.
 2. Click **"Compare & pull request"**.
 3. Add a description of your changes.
-4. Click **"Create pull request"**
+4. Click **"Create pull request"**.
 
 **🚀 Once approved, your changes will be merged! 🎉**
 

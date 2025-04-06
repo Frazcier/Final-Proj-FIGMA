@@ -23,15 +23,22 @@
 
 
 ## 📥 Installation & Setup
-1. Clone the repository:
+1. Install [Git](https://git-scm.com/downloads/win) (It is recommended to use the winget tool)
+2. Open VS Code and sign in your github account
+3. Configure the GitHub user and email with PowerShell:
+   ```sh
+   git config --global user.name "your-github-username"
+   git config --global user.email "your-github-email"
+   ```
+4. Clone the repository:
    ```sh
    git clone https://github.com/Frazcier/Final-Proj-FIGMA.git
    ```
-2. Open the project folder:
+5. Open the project folder:
    ```sh
    cd Final-Proj-FIGMA
    ```
-3. Open the HTML folder and select which file you want to see.
+6. Open the HTML folder and select which file you want to see.
 
 
 ## **🚀 How to Contribute** 

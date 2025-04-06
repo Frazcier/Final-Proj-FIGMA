@@ -23,8 +23,8 @@
 
 
 ## 📥 Installation & Setup
-1. Install [Git](https://git-scm.com/downloads/win) (It is recommended to use the winget tool)
-2. Open VS Code and sign in your github account
+1. Install [Git](https://git-scm.com/downloads/win) (It is recommended to use the winget tool).
+2. Open VS Code and sign in to your GitHub account.
 3. Configure the GitHub user and email with PowerShell:
    ```sh
    git config --global user.name "your-github-username"

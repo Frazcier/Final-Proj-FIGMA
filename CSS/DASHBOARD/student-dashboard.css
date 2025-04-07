@@ -7,7 +7,7 @@
 }
 
 .icon {
-    width: 1.4rem;
+    width: 1.2rem;
 }
 
 .header {
@@ -15,9 +15,11 @@
     align-items: center;
     width: fit-content;
     height: 100%;
+    gap: 0.6rem;
 
     & .logo {
-        width: 6rem;
+        width: 3.8rem;
+        border-radius: 50%;
     }
 
     & h5 {
@@ -58,6 +60,24 @@
         &::placeholder {
             font-weight: 600;
         }
+    }
+}
+
+.icon-bar {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    & h4 {
+        width: 100%;
+    }
+
+    & .avatar {
+        width: 3rem;
     }
 }
 

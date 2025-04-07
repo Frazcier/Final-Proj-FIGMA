@@ -13,6 +13,7 @@
     --color-lightgrey-text: #33333340;
     --background-light: #fff;
     --background-grey: #eee;
+    --background-grey2: #d3d3d3;
     --background-dark: #000;
     --background-shadow: #dda0dd;
 }
@@ -68,6 +69,6 @@ button {
     color: var(--color-light-text);
 }
 
-:is(h1, h2, h3, p, a) {
+:is(h1, h2, h3, h4, h5, h6, p, a) {
     color: var(--color-dark-text);
 }

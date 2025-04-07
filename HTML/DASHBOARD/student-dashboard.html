@@ -20,13 +20,47 @@
             <input type="text" placeholder="Search...">
         </div>
         <div class="icon-bar">
-            <img src="/ASSETS/GLOBAL/notif-icon.svg" alt="Notification" class="icon">
+            <a href="#notification-pop-up"><img src="/ASSETS/GLOBAL/notif-icon.svg" alt="Notification" class="icon"></a>
             <img src="/ASSETS/GLOBAL/dark-mode-icon.svg" alt="Dark Mode" class="icon">
         </div>
         <div class="profile">
             <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar">
             <h4>Timothy Dionela</h4>
-            <img src="/ASSETS/GLOBAL/arrow-down-icon.svg" alt="Drop Down" class="icon">
+            <a href=""><img src="/ASSETS/GLOBAL/arrow-down-icon.svg" alt="Drop Down" class="icon"></a>
+        </div>
+    </div>
+    <div id="notification-pop-up" class="overlay">
+        <a href="#" class="cancel"></a>
+        <div class="pop-up-content">
+            <h3>Notification</h3>
+            <div class="divider"></div>
+            <ul>
+                <li>
+                    <img src="/ASSETS/GLOBAL/notif-1-icon.svg" alt="Notification 1">
+                    <div class="detail">
+                        <p class="title">Hi!, Welcome!</p>
+                        <p class="desc">Welcome to the CIS Fam!</p>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <img src="/ASSETS/GLOBAL/notif-2-icon.svg" alt="Notification 2">
+                    <div class="detail">
+                        <p class="title">Membership Fee</p>
+                        <p class="desc">Just a reminder that you ha...</p>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <img src="/ASSETS/GLOBAL/notif-3-icon.svg" alt="Notification 3">
+                    <div class="detail">
+                        <p class="title">Notification</p>
+                        <p class="desc">This is a test notification!</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <h4>See all notification</h4>
         </div>
     </div>
     <div class="container">
@@ -37,7 +71,7 @@
                     <h4>Timothy Dionela</h4>
                     <p>Student</p>
                 </div>
-                <img src="/ASSETS/GLOBAL/kebab-menu-icon.svg" alt="Side List" class="icon">
+                <a href="#kebab-menu"><img src="/ASSETS/GLOBAL/kebab-menu-icon.svg" alt="Kebab Menu" class="icon"></a>
             </div>
             <div class="selection">
                 <ul>
@@ -65,6 +99,27 @@
                         <img src="/ASSETS/GLOBAL/account-settings-icon.svg" alt="Account Settings" class="icon">
                         <a href="/HTML/ACCOUNT SETTINGS/account-settings-student.html">Account Settings</a>
                     </li>
+                </ul>
+            </div>
+        </div>
+        <div id="kebab-menu" class="overlay">
+            <a href="#" class="cancel"></a>
+            <div class="pop-up-content">
+                <ul>
+                    <a href="/HTML/ACCOUNT SETTINGS/account-settings-student.html"><li>
+                        <img src="/ASSETS/GLOBAL/kebab-menu-1-icon.svg" alt="Account Settings">
+                        <p>Account Settings</p>
+                    </li></a>
+                    <div class="divider"></div>
+                    <a href="/HTML/ACCOUNT SETTINGS/account-settings-student.html"><li>
+                        <img src="/ASSETS/GLOBAL/kebab-menu-2-icon.svg" alt="Change Password">
+                        <p>Change Password</p>
+                    </li></a>
+                    <div class="divider"></div>
+                    <a href="/HTML/LOG-IN/login-student.html"><li>
+                        <img src="/ASSETS/GLOBAL/kebab-menu-3-icon.svg" alt="Logout">
+                        <p>Logout</p>
+                    </li></a>
                 </ul>
             </div>
         </div>

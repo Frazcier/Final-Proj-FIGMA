@@ -19,8 +19,10 @@
 - **JavaScript**  
 - **Figma**  
 - **Git**  
-- **Visual Studio**  
+- **Visual Studio**
 
+## 🚀 Live Demo
+🔗 ([Click here to view the live site](https://frazcier.github.io/BSU-Intramural-Page/))
 
 ## 📥 Installation & Setup
 ### **🔹 1. Install Git**  

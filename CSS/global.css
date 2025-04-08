@@ -256,6 +256,11 @@ button {
     }
 }
 
+/***** MAIN CONTENT SECTION *****/
+.content {
+    flex-basis: 100%;
+}
+
 
 /***** POP UPS SECTION *****/
 :is(#notification-pop-up, #kebab-menu) {

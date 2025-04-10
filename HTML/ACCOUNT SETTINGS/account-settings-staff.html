@@ -4,13 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/global.css">
-	<link rel="stylesheet" href="/CSS/ACCOUNT-SETTINGS/account-settings-staff.css"/>
+    <link rel="stylesheet" href="account-settings-staff.css"/>
     <link rel="icon" type="image/x-icon" href="/IMAGES/logo-1.ico">
     <title>STAFF ACCOUNT SETTINGS UI</title>
 </head>
 <body>
-    <div class="top-navigation"></div>
-    <div class="side-navigation"></div>
-    <div class="content"></div>
+    
+    <div class="top-navigation">
+        <div class="left">
+            <div class="logo">
+                <span>Ikinamada Designs</span>
+            </div>
+            <span class="user-title">Giga Chad</span>
+            <p>System Administrator</p>
+        </div>
+        <div class="center">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <span class="search-icon"></span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="notification">
+                <img src="/IMAGES/notification-icon.png" alt="Notification Icon">
+                <span class="badge">75</span>
+            </div>
+            <div class="user-profile">
+                <img src="/IMAGES/profile-picture.png" alt="Profile Picture">
+                <span>Giga Chad</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="side-navigation">
+        <ul>
+            <li><img src="/IMAGES/dashboard-icon.png" alt="Dashboard Icon"> Dashboard</li>
+            <li><img src="/IMAGES/user-management-icon.png" alt="User Management Icon"> User Management</li>
+            <li><img src="/IMAGES/sub-management-icon.png" alt="Sub Management Icon"> Sub Management</li>
+            <li><img src="/IMAGES/grades-reports-icon.png" alt="Grades & Reports Icon"> Grades & Reports</li>
+            <li><img src="/IMAGES/content-library-icon.png" alt="Content Library Icon"> Content Library</li>
+            <li class="active"><img src="/IMAGES/account-settings-icon.png" alt="Account Settings Icon"> Account Settings</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h2>Account</h2>
+            <span class="tag">Real-time information and activities of your property.</span>
+            <span class="badge">x75</span>
+        </div>
+        <div class="section profile-picture">
+            <img src="/IMAGES/profile-picture.png" alt="Profile Picture">
+            <div class="profile-info">
+                <p>Profile picture PNG, JPEG under 15mb</p>
+                <button>Upload new picture</button>
+            </div>
+        </div>
+        <div class="section full-name">
+            <label>Full Name</label>
+            <div class="input-group">
+                <input type="text" placeholder="First Name" value="Giga">
+                <input type="text" placeholder="Middle Name">
+                <input type="text" placeholder="Last Name" value="Chad">
+            </div>
+        </div>
+        <div class="section contact-email">
+            <label>Contact Email</label>
+            <p>Manage your accounts email address for the invoices.</p>
+            <input type="email" value="giga.chad@gmail.com">
+            <button><span>+</span> Add another email</button>
+        </div>
+        <div class="section password">
+            <label>Password</label>
+            <p>Modify your current password.</p>
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <input type="password" placeholder="Current Password">
+                    <span class="icon"></span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="New Password">
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

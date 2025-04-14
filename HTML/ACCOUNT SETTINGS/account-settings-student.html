@@ -1,217 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/global.css">
-	<link rel="stylesheet" href="/CSS/ACCOUNT-SETTINGS/account-settings-student.css"/>
-    <link rel="icon" type="image/x-icon" href="/ASSETS/LOGO/logo.ico">
-    <title>STUDENT ACCOUNT SETTINGS UI</title>
-</head>
-<body>
-    <div class="top-navigation">
-        <div class="header">
-            <img src="/ASSETS/GLOBAL/logo.png" alt="Ikinamada Designs" class="logo">
-            <h4>Ikinamada Designs</h4>
-            <img src="/ASSETS/GLOBAL/burger-menu-icon.svg" alt="Menu" class="menu">
-        </div>
-        <div class="search-bar">
-            <img src="/ASSETS/GLOBAL/search-icon.svg" alt="Search Icon">
-            <input type="text" placeholder="Search...">
-        </div>
-        <div class="icon-bar">
-            <a href="#notification-pop-up"><img src="/ASSETS/GLOBAL/notif-icon.svg" alt="Notification" class="icon"></a>
-            <img src="/ASSETS/GLOBAL/dark-mode-icon.svg" alt="Dark Mode" class="icon">
-        </div>
-        <div class="profile">
-            <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar">
-            <h4>Timothy Dionela</h4>
-            <img src="/ASSETS/GLOBAL/arrow-down-icon.svg" alt="Drop Down" class="icon">
-        </div>
-    </div>
-    <div id="notification-pop-up" class="overlay">
-        <a href="#" class="cancel"></a>
-        <div class="pop-up-content">
-            <h3>Notification</h3>
-            <div class="divider"></div>
-            <ul>
-                <li>
-                    <img src="/ASSETS/GLOBAL/notif-1-icon.svg" alt="Notification 1">
-                    <div class="detail">
-                        <p class="title">Hi!, Welcome!</p>
-                        <p class="desc">Welcome to the CIS Fam!</p>
-                    </div>
-                </li>
-                <div class="divider"></div>
-                <li>
-                    <img src="/ASSETS/GLOBAL/notif-2-icon.svg" alt="Notification 2">
-                    <div class="detail">
-                        <p class="title">Membership Fee</p>
-                        <p class="desc">Just a reminder that you ha...</p>
-                    </div>
-                </li>
-                <div class="divider"></div>
-                <li>
-                    <img src="/ASSETS/GLOBAL/notif-3-icon.svg" alt="Notification 3">
-                    <div class="detail">
-                        <p class="title">Notification</p>
-                        <p class="desc">This is a test notification!</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="divider"></div>
-            <h4>See all notification</h4>
-        </div>
-    </div>
-    <div class="container">
-        <div class="side-navigation">
-            <div class="profile">
-                <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar">
-                <div class="profile-details">
-                    <h4>Timothy Dionela</h4>
-                    <p>Student</p>
-                </div>
-                <a href="#kebab-menu"><img src="/ASSETS/GLOBAL/kebab-menu-icon.svg" alt="Kebab Menu" class="icon"></a>
-            </div>
-            <div class="selection">
-                <ul>
-                    <li>
-                        <img src="/ASSETS/GLOBAL/dashboard-icon.svg" alt="Dashboard" class="icon">
-                        <a href="/HTML/DASHBOARD/student-dashboard.html">Dashboard</a>
-                    </li>
-                    <li>
-                        <img src="/ASSETS/GLOBAL/enrolled-subjects-icon.svg" alt="Enrolled Subjects" class="icon">
-                        <a href="/HTML/ENROLLED SUBJECTS/enrolled-subjects.html">Enrolled Subjects</a>
-                    </li>
-                    <li>
-                        <img src="/ASSETS/GLOBAL/grade-report-icon.svg" alt="Grade & Report" class="icon">
-                        <a href="/HTML/GRADE REPORT/grade-report.html">Grade & Report</a>
-                    </li>
-                    <li>
-                        <img src="/ASSETS/GLOBAL/libraries-icon.svg" alt="Libraries" class="icon">
-                        <a href="/HTML/LIBRARIES/course-materials.html">Libraries</a>
-                    </li>
-                    <li>
-                        <img src="/ASSETS/GLOBAL/payments-icon.svg" alt="Payments" class="icon">
-                        <a href="/HTML/PAYMENTS/payments.html">Payments</a>
-                    </li>
-                    <li class="active">
-                        <img src="/ASSETS/GLOBAL/active-account-settings-icon.svg" alt="Account Settings" class="icon">
-                        <a href="#">Account Settings</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="kebab-menu" class="overlay">
-            <a href="#" class="cancel"></a>
-            <div class="pop-up-content">
-                <ul>
-                    <a href="/HTML/LOG-IN/login-student.html"><li>
-                        <img src="/ASSETS/GLOBAL/kebab-menu-3-icon.svg" alt="Logout">
-                        <p>Logout</p>
-                    </li></a>
-                </ul>
-            </div>
-        </div>
-        <div class="content">
-            <!-- ITO LANG GALAWIN NIO HEHE -->
-            <!DOCTYPE html>
-<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account Settings</title>
-  <link rel="stylesheet" href="C:\Users\Admin\Documents\GitHub Prog\Final-Proj-FIGMA\CSS\ACCOUNT-SETTINGS\account-settings-student.css">
+  <link rel="stylesheet" href="/CSS/global.css">
+  <link rel="stylesheet" href="/CSS/ACCOUNT-SETTINGS/account-settings-student.css" />
+  <link rel="icon" type="image/x-icon" href="/ASSETS/LOGO/logo.ico">
+  <title>STUDENT ACCOUNT SETTINGS UI</title>
 </head>
+
 <body>
-  <div class="container">
-    <!-- Header Section -->
+  <div class="top-navigation">
     <div class="header">
-      <h1>Account</h1>
-      <p>Real-time information and activities of your property.</p>
+      <img src="/ASSETS/GLOBAL/logo.png" alt="Ikinamada Designs" class="logo">
+      <h4>Ikinamada Designs</h4>
+      <img src="/ASSETS/GLOBAL/burger-menu-icon.svg" alt="Menu" class="menu">
     </div>
-
-    <!-- Profile Picture Section -->
-    <div class="profile-picture">
-      <img src="profile.jpg" alt="Profile Picture">
-      <div class="profile-text">
-        <p>Profile picture</p>
-        <p>PNG, JPEG under 15mb</p>
-      </div>
-      <button>Upload new picture</button>
+    <div class="search-bar">
+      <img src="/ASSETS/GLOBAL/search-icon.svg" alt="Search Icon">
+      <input type="text" placeholder="Search...">
     </div>
-
-    <!-- Full Name Section -->
-    <div class="full-name">
-      <h2>Full Name</h2>
-      <div class="name-inputs">
-        <input type="text" placeholder="First Name" value="Timothy">
-        <input type="text" placeholder="Middle Name">
-        <input type="text" placeholder="Last Name" value="Dionela">
-      </div>
+    <div class="icon-bar">
+      <a href="#notification-pop-up"><img src="/ASSETS/GLOBAL/notif-icon.svg" alt="Notification" class="icon"></a>
+      <img src="/ASSETS/GLOBAL/dark-mode-icon.svg" alt="Dark Mode" class="icon">
     </div>
-
-    <!-- Contact Email Section -->
-    <div class="contact-email">
-        <h2>Contact Email</h2>
-        <p>Manage your accounts email address for the invoices.</p>
-        <div class="email-list">
-          <div class="email-item">
-            <img src="https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/ASSETS/ACCOUNT-SETTINGS/email-icon.svg" alt="Envelope">
-            <span>dionela.ikinamada@gmail.com</span>
-          </div>
-          <div class="email-item">
-            <img src="https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/ASSETS/ACCOUNT-SETTINGS/email-icon.svg" alt="Envelope">
-            <span>ikinamada123@gmail.com</span>
-          </div>
-          <button>
-            <img src="https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/ASSETS/ACCOUNT-SETTINGS/plus-icon.svg" alt="Plus">
-            Add another email
-          </button>
-        </div>
-      </div>
-
-    <!-- Password Section -->
-    <div class="password">
-        <h2>Password</h2>
-        <p>Modify your current password.</p>
-        <div class="password-inputs">
-          <div class="input-with-icon">
-            <img src="https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/ASSETS/ACCOUNT-SETTINGS/lock-icon.svg" alt="Lock">
-            <input type="password" placeholder="Current Password">
-          </div>
-          <div class="input-with-icon">
-            <img src="https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/ASSETS/ACCOUNT-SETTINGS/lock-icon.svg" alt="Lock">
-            <input type="password" placeholder="New Password">
-          </div>
-          <button>
-            <img src="https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/ASSETS/ACCOUNT-SETTINGS/lock-icon.svg" alt="Lock">
-            Change Password
-          </button>
-        </div>
-      </div>
-
-    <!-- Account Security Section -->
-    <div class="account-security">
-      <h2>Account Security</h2>
-      <p>Manage your account security.</p>
-      <div class="security-buttons">
-        <button>
-          <img src="https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/ASSETS/ACCOUNT-SETTINGS/power-icon.svg" alt="Power">
-          Logout
-        </button>
-        <button class="delete-account">
-          <img src="https://github.com/Frazcier/Final-Proj-FIGMA/raw/main/ASSETS/ACCOUNT-SETTINGS/trash-icon.svg" alt="Trash">
-          Request Account Deletion
-        </button>
-      </div>
+    <div class="profile">
+      <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar">
+      <h4>Timothy Dionela</h4>
+      <a href=""><img src="/ASSETS/GLOBAL/arrow-down-icon.svg" alt="Drop Down" class="icon"></a>
     </div>
   </div>
-</body>
-</html>
-                  </div>
-              </div>
-        </div>
+  <div id="notification-pop-up" class="overlay">
+    <a href="#" class="cancel"></a>
+    <div class="pop-up-content">
+      <h3>Notification</h3>
+      <div class="divider"></div>
+      <ul>
+        <li>
+          <img src="/ASSETS/GLOBAL/notif-1-icon.svg" alt="Notification 1">
+          <div class="detail">
+            <p class="title">Hi!, Welcome!</p>
+            <p class="desc">Welcome to the CIS Fam!</p>
+          </div>
+        </li>
+        <div class="divider"></div>
+        <li>
+          <img src="/ASSETS/GLOBAL/notif-2-icon.svg" alt="Notification 2">
+          <div class="detail">
+            <p class="title">Membership Fee</p>
+            <p class="desc">Just a reminder that you ha...</p>
+          </div>
+        </li>
+        <div class="divider"></div>
+        <li>
+          <img src="/ASSETS/GLOBAL/notif-3-icon.svg" alt="Notification 3">
+          <div class="detail">
+            <p class="title">Notification</p>
+            <p class="desc">This is a test notification!</p>
+          </div>
+        </li>
+      </ul>
+      <div class="divider"></div>
+      <h4>See all notification</h4>
     </div>
+  </div>
+  <div class="container">
+    <div class="side-navigation">
+      <div class="profile">
+        <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar">
+        <div class="profile-details">
+          <h4>Timothy Dionela</h4>
+          <p>Student</p>
+        </div>
+        <a href="#kebab-menu"><img src="/ASSETS/GLOBAL/kebab-menu-icon.svg" alt="Kebab Menu" class="icon"></a>
+      </div>
+      <div class="selection">
+        <ul>
+          <li class="active">
+            <img src="/ASSETS/GLOBAL/active-dashboard-icon.svg" alt="Dashboard" class="icon">
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <img src="/ASSETS/GLOBAL/enrolled-subjects-icon.svg" alt="Enrolled Subjects" class="icon">
+            <a href="/HTML/ENROLLED SUBJECTS/enrolled-subjects.html">Enrolled Subjects</a>
+          </li>
+          <li>
+            <img src="/ASSETS/GLOBAL/grade-report-icon.svg" alt="Grade & Report" class="icon">
+            <a href="/HTML/GRADE REPORT/grade-report.html">Grade & Report</a>
+          </li>
+          <li>
+            <img src="/ASSETS/GLOBAL/libraries-icon.svg" alt="Libraries" class="icon">
+            <a href="/HTML/LIBRARIES/course-materials.html">Libraries</a>
+          </li>
+          <li>
+            <img src="/ASSETS/GLOBAL/payments-icon.svg" alt="Payments" class="icon">
+            <a href="/HTML/PAYMENTS/payments.html">Payments</a>
+          </li>
+          <li>
+            <img src="/ASSETS/GLOBAL/account-settings-icon.svg" alt="Account Settings" class="icon">
+            <a href="/HTML/ACCOUNT SETTINGS/account-settings-student.html">Account Settings</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="kebab-menu" class="overlay">
+      <a href="#" class="cancel"></a>
+      <div class="pop-up-content">
+        <ul>
+          <a href="/HTML/ACCOUNT SETTINGS/account-settings-student.html">
+            <li>
+              <img src="/ASSETS/GLOBAL/kebab-menu-1-icon.svg" alt="Account Settings">
+              <p>Account Settings</p>
+            </li>
+          </a>
+          <div class="divider"></div>
+          <a href="/HTML/ACCOUNT SETTINGS/account-settings-student.html">
+            <li>
+              <img src="/ASSETS/GLOBAL/kebab-menu-2-icon.svg" alt="Change Password">
+              <p>Change Password</p>
+            </li>
+          </a>
+          <div class="divider"></div>
+          <a href="/HTML/LOG-IN/login-student.html">
+            <li>
+              <img src="/ASSETS/GLOBAL/kebab-menu-3-icon.svg" alt="Logout">
+              <p>Logout</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="content">hi</div>
+  </div>
 </body>
+
 </html>

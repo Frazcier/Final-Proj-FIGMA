@@ -1,135 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/global.css" />
+    <link
+      rel="stylesheet"
+      href="/CSS/ACCOUNT-SETTINGS/account-settings-student.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/ASSETS/LOGO/logo.ico" />
+    <title>STUDENT ACCOUNT SETTINGS UI</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/CSS/global.css">
-  <link rel="stylesheet" href="/CSS/ACCOUNT-SETTINGS/account-settings-student.css" />
-  <link rel="icon" type="image/x-icon" href="/ASSETS/LOGO/logo.ico">
-  <title>STUDENT ACCOUNT SETTINGS UI</title>
-</head>
-
-<body>
-  <div class="top-navigation">
-    <div class="header">
-      <img src="/ASSETS/GLOBAL/logo.png" alt="Ikinamada Designs" class="logo">
-      <h4>Ikinamada Designs</h4>
-      <img src="/ASSETS/GLOBAL/burger-menu-icon.svg" alt="Menu" class="menu">
-    </div>
-    <div class="search-bar">
-      <img src="/ASSETS/GLOBAL/search-icon.svg" alt="Search Icon">
-      <input type="text" placeholder="Search...">
-    </div>
-    <div class="icon-bar">
-      <img src="/ASSETS/GLOBAL/dark-mode-icon.svg" alt="Dark Mode" class="icon">
-      <a href="#notification-pop-up"><img src="/ASSETS/GLOBAL/notif-icon.svg" alt="Notification" class="icon"></a>
-    </div>
-    <div class="profile">
-      <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar">
-      <h4>Timothy Dionela</h4>
-      <a href="#dropdown-menu"><img src="/ASSETS/GLOBAL/arrow-down-icon.svg" alt="Drop Down" class="icon"></a>
-    </div>
-  </div>
-  <div id="notification-pop-up" class="overlay">
-    <a href="#" class="cancel"></a>
-    <div class="pop-up-content">
-      <h3>Notification</h3>
-      <div class="divider"></div>
-      <ul>
-        <li>
-          <img src="/ASSETS/GLOBAL/notif-1-icon.svg" alt="Notification 1">
-          <div class="detail">
-            <p class="title">Hi!, Welcome!</p>
-            <p class="desc">Welcome to the CIS Fam!</p>
-          </div>
-        </li>
-        <div class="divider"></div>
-        <li>
-          <img src="/ASSETS/GLOBAL/notif-2-icon.svg" alt="Notification 2">
-          <div class="detail">
-            <p class="title">Membership Fee</p>
-            <p class="desc">Just a reminder that you ha...</p>
-          </div>
-        </li>
-        <div class="divider"></div>
-        <li>
-          <img src="/ASSETS/GLOBAL/notif-3-icon.svg" alt="Notification 3">
-          <div class="detail">
-            <p class="title">Notification</p>
-            <p class="desc">This is a test notification!</p>
-          </div>
-        </li>
-      </ul>
-      <div class="divider"></div>
-      <h4>See all notification</h4>
-    </div>
-  </div>
-  <div id="dropdown-menu" class="overlay">
-    <a href="#" class="cancel"></a>
-    <div class="pop-up-content">
-        <ul>
-            <a href="/HTML/LOG-IN/login-student.html"><li>
-                <img src="/ASSETS/GLOBAL/kebab-menu-3-icon.svg" alt="Logout">
-                <p>Logout</p>
-            </li></a>
-        </ul>
-    </div>
-</div>
-  <div class="container">
-    <div class="side-navigation">
+  <body>
+    <div class="top-navigation">
+      <div class="header">
+        <img
+          src="/ASSETS/GLOBAL/logo.png"
+          alt="Ikinamada Designs"
+          class="logo"
+        />
+        <h4>Ikinamada Designs</h4>
+        <img
+          src="/ASSETS/GLOBAL/burger-menu-icon.svg"
+          alt="Menu"
+          class="menu"
+        />
+      </div>
+      <div class="search-bar">
+        <img src="/ASSETS/GLOBAL/search-icon.svg" alt="Search Icon" />
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="icon-bar">
+        <img
+          src="/ASSETS/GLOBAL/dark-mode-icon.svg"
+          alt="Dark Mode"
+          class="icon"
+        />
+        <a href="#notification-pop-up"
+          ><img
+            src="/ASSETS/GLOBAL/notif-icon.svg"
+            alt="Notification"
+            class="icon"
+        /></a>
+      </div>
       <div class="profile">
-        <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar">
-        <div class="profile-details">
-          <h4>Timothy Dionela</h4>
-          <p>Student</p>
-        </div>
-        <a href="#kebab-menu"><img src="/ASSETS/GLOBAL/kebab-menu-icon.svg" alt="Kebab Menu" class="icon"></a>
-      </div>
-      <div class="selection">
-        <ul>
-          <li>
-            <img src="/ASSETS/GLOBAL/dashboard-icon.svg" alt="Dashboard" class="icon">
-            <a href="/HTML/DASHBOARD/student-dashboard.html">Dashboard</a>
-          </li>
-          <li>
-            <img src="/ASSETS/GLOBAL/enrolled-subjects-icon.svg" alt="Enrolled Subjects" class="icon">
-            <a href="/HTML/ENROLLED SUBJECTS/enrolled-subjects.html">Enrolled Subjects</a>
-          </li>
-          <li>
-            <img src="/ASSETS/GLOBAL/grade-report-icon.svg" alt="Grade & Report" class="icon">
-            <a href="/HTML/GRADE REPORT/grade-report.html">Grade & Report</a>
-          </li>
-          <li>
-            <img src="/ASSETS/GLOBAL/libraries-icon.svg" alt="Libraries" class="icon">
-            <a href="/HTML/LIBRARIES/libraries.html">Libraries</a>
-          </li>
-          <li>
-            <img src="/ASSETS/GLOBAL/payments-icon.svg" alt="Payments" class="icon">
-            <a href="/HTML/PAYMENTS/payments.html">Payments</a>
-          </li>
-          <li class="active">
-            <img src="/ASSETS/GLOBAL/active-account-settings-icon.svg" alt="Account Settings" class="icon">
-            <a href="/HTML/ACCOUNT SETTINGS/account-settings-student.html">Account Settings</a>
-          </li>
-        </ul>
+        <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar" />
+        <h4>Timothy Dionela</h4>
+        <a href="#dropdown-menu"
+          ><img
+            src="/ASSETS/GLOBAL/arrow-down-icon.svg"
+            alt="Drop Down"
+            class="icon"
+        /></a>
       </div>
     </div>
-    <div id="kebab-menu" class="overlay">
+    <div id="notification-pop-up" class="overlay">
+      <a href="#" class="cancel"></a>
+      <div class="pop-up-content">
+        <h3>Notification</h3>
+        <div class="divider"></div>
+        <ul>
+          <li>
+            <img src="/ASSETS/GLOBAL/notif-1-icon.svg" alt="Notification 1" />
+            <div class="detail">
+              <p class="title">Hi!, Welcome!</p>
+              <p class="desc">Welcome to the CIS Fam!</p>
+            </div>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <img src="/ASSETS/GLOBAL/notif-2-icon.svg" alt="Notification 2" />
+            <div class="detail">
+              <p class="title">Membership Fee</p>
+              <p class="desc">Just a reminder that you ha...</p>
+            </div>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <img src="/ASSETS/GLOBAL/notif-3-icon.svg" alt="Notification 3" />
+            <div class="detail">
+              <p class="title">Notification</p>
+              <p class="desc">This is a test notification!</p>
+            </div>
+          </li>
+        </ul>
+        <div class="divider"></div>
+        <h4>See all notification</h4>
+      </div>
+    </div>
+    <div id="dropdown-menu" class="overlay">
       <a href="#" class="cancel"></a>
       <div class="pop-up-content">
         <ul>
           <a href="/HTML/LOG-IN/login-student.html">
             <li>
-              <img src="/ASSETS/GLOBAL/kebab-menu-3-icon.svg" alt="Logout">
+              <img src="/ASSETS/GLOBAL/kebab-menu-3-icon.svg" alt="Logout" />
               <p>Logout</p>
             </li>
           </a>
         </ul>
       </div>
     </div>
-    <div class="content">hi</div>
-  </div>
-</body>
-
+    <div class="container">
+      <div class="side-navigation">
+        <div class="profile">
+          <img src="/ASSETS/GLOBAL/profile.svg" alt="Profile" class="avatar" />
+          <div class="profile-details">
+            <h4>Timothy Dionela</h4>
+            <p>Student</p>
+          </div>
+          <a href="#kebab-menu"
+            ><img
+              src="/ASSETS/GLOBAL/kebab-menu-icon.svg"
+              alt="Kebab Menu"
+              class="icon"
+          /></a>
+        </div>
+        <div class="selection">
+          <ul>
+            <li>
+              <img
+                src="/ASSETS/GLOBAL/dashboard-icon.svg"
+                alt="Dashboard"
+                class="icon"
+              />
+              <a href="/HTML/DASHBOARD/student-dashboard.html">Dashboard</a>
+            </li>
+            <li>
+              <img
+                src="/ASSETS/GLOBAL/enrolled-subjects-icon.svg"
+                alt="Enrolled Subjects"
+                class="icon"
+              />
+              <a href="/HTML/ENROLLED SUBJECTS/enrolled-subjects.html"
+                >Enrolled Subjects</a
+              >
+            </li>
+            <li>
+              <img
+                src="/ASSETS/GLOBAL/grade-report-icon.svg"
+                alt="Grade & Report"
+                class="icon"
+              />
+              <a href="/HTML/GRADE REPORT/grade-report.html">Grade & Report</a>
+            </li>
+            <li>
+              <img
+                src="/ASSETS/GLOBAL/libraries-icon.svg"
+                alt="Libraries"
+                class="icon"
+              />
+              <a href="/HTML/LIBRARIES/libraries.html">Libraries</a>
+            </li>
+            <li>
+              <img
+                src="/ASSETS/GLOBAL/payments-icon.svg"
+                alt="Payments"
+                class="icon"
+              />
+              <a href="/HTML/PAYMENTS/payments.html">Payments</a>
+            </li>
+            <li class="active">
+              <img
+                src="/ASSETS/GLOBAL/active-account-settings-icon.svg"
+                alt="Account Settings"
+                class="icon"
+              />
+              <a href="/HTML/ACCOUNT SETTINGS/account-settings-student.html"
+                >Account Settings</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="kebab-menu" class="overlay">
+        <a href="#" class="cancel"></a>
+        <div class="pop-up-content">
+          <ul>
+            <a href="/HTML/LOG-IN/login-student.html">
+              <li>
+                <img src="/ASSETS/GLOBAL/kebab-menu-3-icon.svg" alt="Logout" />
+                <p>Logout</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="section-header">
+          <h1>Enrolled Subjects</h1>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="profile-picture-section">
+          <div class="profile-row">
+            <div class="profile-left">
+              <img
+                src="/ASSETS/ACCOUNT-SETTINGS/profile-picture.png"
+                alt="Profile Picture"
+              />
+              <div class="profile-text">
+                <p>Profile picture</p>
+                <p>PNG, JPEG under 15mb</p>
+              </div>
+            </div>
+            <button>Uploade new picture</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

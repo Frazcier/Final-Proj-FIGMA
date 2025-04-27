@@ -169,7 +169,6 @@ button {
 
     & .avatar {
         width: 3.8rem;
-        transform: rotate(14deg);
     }
 
     & .icon {
@@ -196,6 +195,10 @@ button {
         & .icon {
             width: 2.4rem;
             transform: rotate(180deg);
+        }
+
+        & .staff-name {
+            margin-right: 2.2rem;
         }
     }
 }

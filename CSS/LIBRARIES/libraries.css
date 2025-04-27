@@ -54,7 +54,6 @@ input[type="radio"] {
     display: none;
 }
 
-
 #course-materials:checked ~ .content-container #course-materials-content,
 #e-books:checked ~ .content-container  #e-books-content,
 #research-papers:checked ~ .content-container  #research-papers-content{

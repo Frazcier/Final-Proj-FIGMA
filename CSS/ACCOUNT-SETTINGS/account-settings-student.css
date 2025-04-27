@@ -1,0 +1,6 @@
+#kebab-menu {
+    & .pop-up-content {
+        left: 7%;
+        top: 16%;
+    }
+}

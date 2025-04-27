@@ -278,6 +278,7 @@ button {
     transition: all 0.3s ease;
     visibility: hidden;
     opacity: 0;
+    z-index: 99;
 
     & .cancel {
         position: absolute;

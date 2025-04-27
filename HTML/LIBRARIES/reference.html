@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Text Width Slider Tabs</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem;
+      background-color: #f7f8fa;
+    } 
+
+    .tab-container {
+      position: relative;
+      width: auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .tabs {
+      display: flex;
+      position: relative;
+      gap: 1.5rem;
+      padding: 0.5rem 1rem;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .tab {
+      position: relative;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      color: #777;
+      transition: color 0.3s;
+    }
+
+    /* Underline per tab */
+    .tab::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      height: 3px;
+      background: transparent;
+      border-radius: 2px;
+      transition: background 0.3s;
+    }
+
+    /* Active tab */
+    #tab1:checked ~ .tabs label[for="tab1"],
+    #tab2:checked ~ .tabs label[for="tab2"],
+    #tab3:checked ~ .tabs label[for="tab3"] {
+      color: #7c4dff;
+    }
+
+    /* Active tab underline */
+    #tab1:checked ~ .tabs label[for="tab1"]::after,
+    #tab2:checked ~ .tabs label[for="tab2"]::after,
+    #tab3:checked ~ .tabs label[for="tab3"]::after {
+      background: #7c4dff;
+    }
+
+    /* Content */
+    .content-container {
+      margin-top: 1rem;
+      padding: 2rem;
+      background: #fff;
+      text-align: center;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .content-container > div {
+      display: none;
+    }
+
+    #tab1:checked ~ .content-container #content1,
+    #tab2:checked ~ .content-container #content2,
+    #tab3:checked ~ .content-container #content3 {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+<div class="tab-container">
+  <!-- Radios -->
+  <input type="radio" id="tab1" name="tab" checked>
+  <input type="radio" id="tab2" name="tab">
+  <input type="radio" id="tab3" name="tab">
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <label class="tab" for="tab1">Option 1</label>
+    <label class="tab" for="tab2">Option 2</label>
+    <label class="tab" for="tab3">Option 3</label>
+  </div>
+
+  <!-- Content -->
+  <div class="content-container">
+    <div id="content1">
+      <h2>Content for Option 1</h2>
+      <p>This is the first tab's content. 🎯</p>
+    </div>
+    <div id="content2">
+      <h2>Content for Option 2</h2>
+      <p>This is the second tab's magic. 🚀</p>
+    </div>
+    <div id="content3">
+      <h2>Content for Option 3</h2>
+      <p>This is the third tab's content. 🎉</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

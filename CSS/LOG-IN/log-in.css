@@ -53,16 +53,15 @@ body {
     & a {
         font-size: 1.1rem;
 
-        &:nth-of-type(1) {
-            letter-spacing: 0.3rem;
-        }
-
         &:nth-of-type(2) {
             font-weight: 500;
         }
     }
 }
 
+.register {
+    letter-spacing: 0;
+}
 
 .left-container {
     flex-basis: 45%;

@@ -167,3 +167,7 @@ input {
         background-color: var(--primary-color);
     }
 }
+
+.enroll {
+    color: var(--color-light-text);
+}

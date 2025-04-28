@@ -6,10 +6,6 @@
     margin-bottom: 2.4rem;
 }
 
-input[type="radio"] {
-    display: none;
-}
-
 .nav-bar {
     display: flex;
     position: relative;

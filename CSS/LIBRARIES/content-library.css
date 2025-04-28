@@ -40,13 +40,61 @@
     & .search-bar {
         padding: 0 1rem;
         background-color: var(--background-grey);
+        border: 0.1rem solid #e0e0e0;
+        transition: all 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.05rem rgba(148, 0, 211, 0.2);
+        }
     }
 
     & .dropdown {
         width: 10rem;
-        border-radius: 0.6rem;
-        font-family: unset;
-        background-color: var(--background-grey);
+        position: relative;
+
+        & select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            font-family: unset;
+            width: 100%;
+            cursor: pointer;
+            font-weight: 500;
+            height: 2.6rem;
+            padding: 0 0.6rem;
+            border-radius: 0.8rem;
+            border: 0.1rem solid #e0e0e0;
+            background-color: var(--background-grey);
+            box-shadow: inset 0 0.05rem 0.1rem rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+
+            &:focus {
+                outline: none;
+                background-color: #eef0f1;
+                border-color: var(--primary-color);
+                box-shadow: 0 0 0 0.05rem rgba(148, 0, 211, 0.2);
+            }
+
+            &:hover {
+                background-color: #e8e9eb;
+            }
+        }
+
+        & .icon {
+            position: absolute;
+            pointer-events: none;
+            right: 0.6rem;
+            top: 50%;
+            transform: translateY(-50%);
+            fill: var(--background-dark);
+            transition: all 0.3s ease;
+        }
+    }
+
+    & .dropdown :is(select:hover, select:focus) + .icon {
+        fill: var(--primary-color);
     }
 
     & button {
@@ -54,6 +102,11 @@
         font-weight: 600;
         padding: 0 1.8rem;
         background-color: var(--primary-color);
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
     }
 }
 

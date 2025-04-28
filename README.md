@@ -4,7 +4,7 @@
 
 
 ## 📅 **Course:** IT 115.1(LAB) - Human and Computer Interaction
-## 👩‍💻 **Team Members:**  
+## 🧑‍💻 **Team Members:**  
 - **Arian Dave Abat**  
 - **Wilmoore Dorencio**  
 - **Dan Anilov Fontanos**  

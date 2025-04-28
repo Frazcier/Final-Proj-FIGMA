@@ -1,0 +1,15 @@
+.section-headers {
+    display: flex;
+    flex-direction: row;
+
+    & .header-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & buttons {
+        background-color: red;
+        width: 10rem;
+        height: 10rem;
+    }
+}

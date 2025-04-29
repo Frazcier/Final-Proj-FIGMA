@@ -22,7 +22,7 @@
 - **Visual Studio**
 
 ## 🚀 Live Demo
-🔗 ([Click here to view the live site](https://frazcier.github.io/BSU-Intramural-Page/))
+🔗 ([Click here to view the live site](https://frazcier.github.io/Final-Proj-FIGMA/))
 
 ## 📥 Installation & Setup
 ### **🔹 1. Install Git**  

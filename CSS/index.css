@@ -1,0 +1,246 @@
+body {
+    overflow-x: hidden;
+    background: linear-gradient(to bottom right, #f5f6fa, #e0e6f7);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background: var(--background-light);
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    & .logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    & nav {
+        & ul {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        & a {
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(to right, #9400d3, #ba55d3);
+
+    & :is(h1, p) {
+        color: var(--color-light-text);
+        margin-bottom: 1rem;
+    }
+
+    & h1 {
+        font-size: 2.5rem;
+    }
+
+    & p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    color: var(--color-light-text);
+    border-radius: 4rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border: 0.1rem solid transparent;
+
+    &:hover {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+        background-color: var(--background-light);
+    }
+
+}
+
+:is(.hero-btn, .cta-btn, .contact-btn) {
+    background: #ffc107;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.6rem;
+    border: none;
+    color: var(--color-dark-text);
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #ffc107;
+        color: var(--color-dark-text);
+    }
+}
+
+.announcement-btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--color-light-text);
+        transform: scale(1.05);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.announcement {
+    padding: 2rem;
+
+    & .announcement-box {
+        background: var(--background-light);
+        border-left: 0.4rem solid var(--primary-color);
+        padding: 1.5rem;
+        border-radius: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: fade-in 1s ease forwards;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.features {
+    padding: 3rem 2rem;
+    text-align: center;
+
+    & .details {
+        &:not(:first-of-type) {
+            margin-top: 2rem;
+        }
+    }
+
+    & .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+
+        & .feature-card {
+            background: var(--background-light);
+            padding: 2rem;
+            cursor: default;
+            border-radius: 1rem;
+            box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+
+            & i {
+                font-size: 2rem;
+                color: var(--primary-color);
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        & .hover-animate:hover {
+            transform: translateY(0.2rem);
+            box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.cta {
+    text-align: center;
+    background: var(--primary-color);
+    padding: 3rem 2rem;
+
+    & h2 {
+        margin-bottom: 2rem;
+        color: var(--color-light-text);
+    }
+}
+
+footer {
+    background: #222;
+    padding: 1.5rem 2rem;
+    text-align: center;
+
+    & p {
+        color: #ccc;
+    }
+
+    & .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    & .footer-links {
+        display: flex;
+        gap: 1.5rem;
+
+        & a {
+            color: #aaa;
+        }
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    & :is(input, textarea) {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        background-color: var(--background-light);
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    & button {
+        border: none;
+        cursor: pointer;
+    }
+}

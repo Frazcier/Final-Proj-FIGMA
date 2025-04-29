@@ -16,8 +16,6 @@
 ## **🛠️ Technologies Used**  
 - **HTML**  
 - **CSS**  
-- **JavaScript**  
-- **Figma**  
 - **Git**  
 - **Visual Studio**
 

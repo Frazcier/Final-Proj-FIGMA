@@ -4,33 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/global.css">
-    <link rel="icon" type="image/x-icon" href="ASSETS/LOGO/logo.ico">
-    <base href="/Final-Proj-FIGMA/">
-    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="icon" type="image/x-icon" href="ASSETS/LOGO/logo.ico">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>LANDING PAGE</title>
 </head>
 <body>
-    <!-- WIP -->
-     <h1>STUDENTS UI</h1>
-     <ul>
-         <li><a href="HTML/LOG-IN/login-student.html">LOGIN</a></li>
-         <li><a href="HTML/SIGN-UP/sign-up-student.html">PRE-ENROLLMENT FORM</a></li>
-        <li><a href="HTML/DASHBOARD/student-dashboard.html">DASHBOARD</a></li>
-        <li><a href="HTML/ENROLLED SUBJECTS/enrolled-subjects.html">ENROLLED SUBJECTS</a></li>
-        <li><a href="HTML/GRADE REPORT/grade-report.html">GRADE REPORT</a></li>
-        <li><a href="HTML/LIBRARIES/libraries.html">LIBRARIES</a></li>
-        <li><a href="HTML/ACCOUNT SETTINGS/account-settings-student.html">ACCOUNT SETTINGS</a></li>
-     </ul>
+    <header>
+        <div class="logo">
+            <img src="/ASSETS/LOGO/logo.png" alt="Logo">
+            <p>Ikinamada Designs</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="button" href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
 
-     <h1>SYSTEM ADMINISTRATOR UI</h1>
-     <ul>
-        <li><a href="HTML/LOG-IN/login-staff.html">LOGIN</a></li>
-        <li><a href="HTML/SIGN-UP/sign-up-staff.html">APPLICATION FORM</a></li>
-        <li><a href="HTML/DASHBOARD/staff-dashboard.html">DASHBOARD</a></li>
-        <li><a href="HTML/MANAGEMENT/user-management.html">USER MANAGEMENT</a></li>
-        <li><a href="HTML/MANAGEMENT/subject-management.html">SUBJECT MANAGEMENT</a></li>
-        <li><a href="HTML/GRADE REPORT/grades-reports.html">GRADES AND REPORTS</a></li>
-        <li><a href="HTML/LIBRARIES/content-library.html">CONTENT LIBRARY</a></li>
-        <li><a href="HTML/ACCOUNT SETTINGS/account-settings-staff.html">ACCOUNT SETTINGS</a></li>
-     </ul>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to CIS Student Portal</h1>
+                    <h3>Brought to you by: Ikinamada Designs</h3>
+                    <a class="button hero-btn" href="#">Enter Portal</a>
+                </div>
+            </section>
+            <section class="announcement">
+                <div class="announcement-box fade-in">
+                    <div>
+                        <h2>📢 Announcement</h2>
+                        <p>New Officers are elected for the BYTE Organization.</p>
+                        <span>April 28, 2025</span>
+                    </div>
+                    <div>
+                        <a class="button announcement-btn">View Details</a>
+                    </div>
+                </div>
+            </section>
+            <section class="features">
+                <h2>What You Can Access</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Enrolled Subjects</h3>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Enrolled Subjects</h3>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Enrolled Subjects</h3>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Enrolled Subjects</h3>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Enrolled Subjects</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </header>
 </body>
 </html>

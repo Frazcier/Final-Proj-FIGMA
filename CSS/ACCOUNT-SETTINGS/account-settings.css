@@ -79,6 +79,9 @@ label {
 
 input {
     width: 100%;
+}
+
+.input {
     padding: 0.4rem;
     border-radius: 0.6rem;
     color: rgba(51, 51, 51, 0.9);

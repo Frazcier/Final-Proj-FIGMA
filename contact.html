@@ -3,56 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="icon" type="image/x-icon" href="ASSETS/LOGO/logo.ico">    
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/logo.ico">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>CONTACT PAGE</title>
+    <title>Contact Us | College of Information Sciences</title>
 </head>
 <body>
     <header>
-        <div class="logo">Ikinamada Designs</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="button" href="login-student.html">Login</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="assets/img/logo/for-guthib.png" alt="CIS Logo" class="nav-logo">
+                <div class="logo-text">Ikinamada Designs</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" class="active-link">Contact</a></li>
+                    <li><a class="button login-btn" href="pages/auth/login.html">Portal Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero" style="background: linear-gradient(to right, #fc4a1a, #f7b733);">
-            <h1>Contact Us</h1>
-            <p>Get in touch with the College of Information Sciences today.</p>
-        </section>
-        <section class="features">
-            <h2>Send a Message</h2>
-            <form class="contact-form" action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="6" placeholder="Your Message" require></textarea>
-                <button class="contact-btn" type="submit">Submit</button>
-            </form>
-            
-            <div>
-                <h3>📍 Address</h3>
-                <p>La Trinidad, Benguet, Philippines</p>
-                <h3>📞 Phone</h3>
-                <p>0960 896 8280</p>
-                <h3>📧 Email</h3>
-                <p>cis@bsu.edu.ph</p>
+        <section class="page-hero contact-hero">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-content center-text">
+                <span class="badge">Get in Touch</span>
+                <h1>We'd Love to <span class="gradient-text">Hear From You</span></h1>
+                <p>Have questions about enrollment, programs, or student services? Reach out to us.</p>
             </div>
         </section>
-        <footer>
-            <div class="footer-content">
-                <p>2025 Ikinamada Designs - College of Information Sciences</p>
-                <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Support</a>
+
+        <section class="contact-section">
+            <div class="contact-wrapper">
+                
+                <div class="contact-form-card glass-card">
+                    <h3>Send us a Message</h3>
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Juan Dela Cruz" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. juan@gmail.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button class="button primary-btn full-width" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="icon-box small"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>College of Information Sciences<br>Benguet State University<br>Km. 5, La Trinidad, Benguet</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="icon-box small"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+63 960 896 8280<br>+63 74 422 2127</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon-box small"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>cis.dean@bsu.edu.ph<br>admissions@bsu.edu.ph</p>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <h4>Follow our Updates</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h3>Ikinamada Designs</h3>
+                    <p>College of Information Sciences</p>
+                    <p>La Trinidad, Benguet, Philippines</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ikinamada Designs. All rights reserved.</p>
             </div>
         </footer>
     </main>

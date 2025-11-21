@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/staff-dashboard.css"/>
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
+    <title>STAFF DASHBOARD UI</title>
+</head>
+<body>
+    <div class="top-navigation">
+        <div class="header">
+            <img src="../../assets/img/logo/for-guthib.png" alt="Ikinamada Designs" class="logo">
+            <h4>Ikinamada Designs</h4>
+        </div>
+        <div class="search-bar">
+            <img src="../../assets/img/icons/search-icon.svg" alt="Search Icon">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="icon-bar">
+            <a href="#notification-pop-up"><img src="../../assets/img/icons/notif-icon.svg" alt="Notification" class="icon"></a>
+        </div>
+        <div class="profile">
+            <img src="../../assets/img/profile-pictures/profile-staff.svg" alt="Profile" class="avatar">
+            <h4>Giga Chad</h4>
+            <a href="#dropdown-menu"><img src="../../assets/img/icons/arrow-down-icon.svg" alt="Drop Down" class="icon"></a>
+        </div>
+    </div>
+    <div id="notification-pop-up" class="overlay">
+        <a href="#" class="cancel"></a>
+        <div class="pop-up-content">
+            <h3>Notification</h3>
+            <div class="divider"></div>
+            <ul>
+                <li>
+                    <img src="../../assets/img/icons/notif-1-icon.svg" alt="Notification 1">
+                    <div class="detail">
+                        <p class="title">Hi!, Welcome!</p>
+                        <p class="desc">Welcome to the CIS Fam!</p>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <img src="../../assets/img/icons/notif-2-icon.svg" alt="Notification 2">
+                    <div class="detail">
+                        <p class="title">Membership Fee</p>
+                        <p class="desc">Just a reminder that you ha...</p>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <img src="../../assets/img/icons/notif-3-icon.svg" alt="Notification 3">
+                    <div class="detail">
+                        <p class="title">Notification</p>
+                        <p class="desc">This is a test notification!</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <h4>See all notification</h4>
+        </div>
+    </div>
+    <div id="dropdown-menu" class="overlay">
+        <a href="#" class="cancel"></a>
+        <div class="pop-up-content">
+            <ul>
+                <a href="../staff/account-settings-staff.html"><li>
+                    <img src="../../assets/img/icons/kebab-menu-1-icon.svg" alt="Account Settings">
+                    <p>Account Settings</p>
+                </li></a>
+                <div class="divider"></div>
+                <a href="../staff/account-settings-staff.html"><li>
+                    <img src="../../assets/img/icons/kebab-menu-2-icon.svg" alt="Change Password">
+                    <p>Change Password</p>
+                </li></a>
+                <div class="divider"></div>
+                <a href="../auth/login.html"><li>
+                    <img src="../../assets/img/icons/kebab-menu-3-icon.svg" alt="Logout">
+                    <p>Logout</p>
+                </li></a>
+            </ul>
+        </div>
+      </div>
+    <div class="container">
+        <div class="side-navigation">
+            <div class="profile">
+                <img src="../../assets/img/profile-pictures/profile-staff.svg" alt="Profile" class="avatar">
+                <div class="profile-details">
+                    <h4 class="staff-name">Giga Chad</h4>
+                    <p>Administrator</p>
+                </div>
+                <a href="#kebab-menu"><img src="../../assets/img/icons/kebab-menu-icon.svg" alt="Kebab Menu" class="icon"></a>
+            </div>
+            <div class="selection">
+                <ul>
+                    <li class="active">
+                        <img src="../../assets/img/icons/active-dashboard-icon.svg" alt="Dashboard" class="icon">
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/icons/user-management-icon.svg" alt="User Management" class="icon">
+                        <a href="../staff/user-management.html">User Management</a>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/icons/subject-management-icon.svg" alt="Subject Management" class="icon">
+                        <a href="../staff/subject-management.html">Sub Management</a>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/icons/content-library-icon.svg" alt="Content Library" class="icon">
+                        <a href="../staff/content-library.html">Content Library</a>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/icons/account-settings-icon.svg" alt="Account Settings" class="icon">
+                        <a href="../staff/account-settings-staff.html">Account Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="kebab-menu" class="overlay">
+            <a href="#" class="cancel"></a>
+            <div class="pop-up-content">
+                <ul>
+                    <a href="../staff/account-settings-staff.html"><li>
+                        <img src="../../assets/img/icons/kebab-menu-1-icon.svg" alt="Account Settings">
+                        <p>Account Settings</p>
+                    </li></a>
+                    <div class="divider"></div>
+                    <a href="../staff/account-settings-staff.html"><li>
+                        <img src="../../assets/img/icons/kebab-menu-2-icon.svg" alt="Change Password">
+                        <p>Change Password</p>
+                    </li></a>
+                    <div class="divider"></div>
+                    <a href="../auth/login.html"><li>
+                        <img src="../../assets/img/icons/kebab-menu-3-icon.svg" alt="Logout">
+                        <p>Logout</p>
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="welcome-section">
+                <h2>Welcome, <span>System Administrator</span> Giga Chad!</h2>
+                <p>April 28, 2025</p>
+            </div>
+
+            <div class="section-1">
+                <div class="item-box-1">
+                    <h3>Manage Announcements</h3>
+                    <div class="item">
+                        <div class="item-detail">
+                            <p>New Byte Officers</p>
+                            <p>Published: April 27,2025 | Status: Active</p>
+                        </div>
+                        <button>Edit</button>
+                    </div>
+                    <div class="item-button">
+                        <p>+ Create New Announcement</p>
+                    </div>
+                </div>
+                <div class="item-box-2">
+                    <h3>Subjects Quick Action</h3>
+                    <div class="buttons">
+                        <div class="button">
+                            <p>Add New Subject</p>
+                        </div>
+                        <div class="button">
+                            <p>Manage Instructors</p>
+                        </div>
+                        <div class="button">
+                            <p>Subject Reports</p>
+                        </div>
+                        <div class="button">
+                            <p>View Schedule</p>
+                        </div>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search Subject...">
+                    </div>
+                </div>
+            </div>
+            <div class="section-2">
+                <h3>Recent System Activity</h3>
+                <table>
+                    <thead>
+                        <th>Action</th>
+                        <th>User</th>
+                        <th>Subject/Item</th>
+                        <th>Date and Time</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grade Update</td>
+                            <td>Henson Sagorsor</td>
+                            <td>Computer Programming 2</td>
+                            <td>Apr 20, 2025 | 9:45 AM</td>
+                            <td><span>Complete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Assignment Added</td>
+                            <td>Delia Leon</td>
+                            <td>Introduction to HCI</td>
+                            <td>Apr 22, 2025 | 8:40 AM</td>
+                            <td><span>Complete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Deadline Modified</td>
+                            <td>Delia Leon</td>
+                            <td>Mid-fidelity Projec</td>
+                            <td>Apr 26, 2025 | 10:00 PM</td>
+                            <td><span>Complete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Enrollment Approved</td>
+                            <td>Dean</td>
+                            <td>Timothy Dionela</td>
+                            <td>Apr 27, 2025 | 6:00 PM</td>
+                            <td><span>Complete</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

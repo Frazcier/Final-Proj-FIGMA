@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../assets/css/grade-report.css"/>
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
+    <title>GRADE REPORT UI</title>
+</head>
+<body>
+    <div class="top-navigation">
+        <div class="header">
+            <img src="../../assets/img/logo/logo.png" alt="Ikinamada Designs" class="logo">
+            <h4>Ikinamada Designs</h4>
+        </div>
+        <div class="search-bar">
+            <img src="../../assets/img/icons/search-icon.svg" alt="Search Icon">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="icon-bar">
+            <a href="#notification-pop-up"><img src="../../assets/img/icons/notif-icon.svg" alt="Notification" class="icon"></a>
+        </div>
+        <div class="profile">
+            <img src="../../assets/img/profile-pictures/profile.svg" alt="Profile" class="avatar">
+            <h4>Timothy Dionela</h4>
+            <img src="../../assets/img/icons/arrow-down-icon.svg" alt="Drop Down" class="icon">
+        </div>
+    </div>
+    <div id="notification-pop-up" class="overlay">
+        <a href="#" class="cancel"></a>
+        <div class="pop-up-content">
+            <h3>Notification</h3>
+            <div class="divider"></div>
+            <ul>
+                <li>
+                    <img src="../../assets/img/icons/notif-1-icon.svg" alt="Notification 1">
+                    <div class="detail">
+                        <p class="title">Hi!, Welcome!</p>
+                        <p class="desc">Welcome to the CIS Fam!</p>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <img src="../../assets/img/icons/notif-2-icon.svg" alt="Notification 2">
+                    <div class="detail">
+                        <p class="title">Membership Fee</p>
+                        <p class="desc">Just a reminder that you ha...</p>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <img src="../../assets/img/icons/notif-3-icon.svg" alt="Notification 3">
+                    <div class="detail">
+                        <p class="title">Notification</p>
+                        <p class="desc">This is a test notification!</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <h4>See all notification</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side-navigation">
+            <div class="profile">
+                <img src="../../assets/img/profile-pictures/profile.svg" alt="Profile" class="avatar">
+                <div class="profile-details">
+                    <h4>Timothy Dionela</h4>
+                    <p>Student</p>
+                </div>
+                <a href="#kebab-menu"><img src="../../assets/img/icons/kebab-menu-icon.svg" alt="Kebab Menu" class="icon"></a>
+            </div>
+            <div class="selection">
+                <ul>
+                    <li>
+                        <img src="../../assets/img/icons/dashboard-icon.svg" alt="Dashboard" class="icon">
+                        <a href="../student/student-dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/icons/enrolled-subjects-icon.svg" alt="Enrolled Subjects" class="icon">
+                        <a href="../student/enrolled-subjects.html">Enrolled Subjects</a>
+                    </li>
+                    <li class="active">
+                        <img src="../../assets/img/icons/active-grade-report-icon.svg" alt="Grades Report" class="icon">
+                        <a href="#">Grades Report</a>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/icons/libraries-icon.svg" alt="Libraries" class="icon">
+                        <a href="../student/libraries.html">Libraries</a>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/icons/payments-icon.svg" alt="Payments" class="icon">
+                        <a href="../student/payments.html">Payments</a>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/icons/account-settings-icon.svg" alt="Account Settings" class="icon">
+                        <a href="../student/account-settings-student.html">Account Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="kebab-menu" class="overlay">
+            <a href="#" class="cancel"></a>
+            <div class="pop-up-content">
+                <ul>
+                    <a href="../student/account-settings-student.html"><li>
+                        <img src="../../assets/img/icons/kebab-menu-1-icon.svg" alt="Account Settings">
+                        <p>Account Settings</p>
+                    </li></a>
+                    <div class="divider"></div>
+                    <a href="../student/account-settings-student.html"><li>
+                        <img src="../../assets/img/icons/kebab-menu-2-icon.svg" alt="Change Password">
+                        <p>Change Password</p>
+                    </li></a>
+                    <div class="divider"></div>
+                    <a href="../auth/login.html"><li>
+                        <img src="../../assets/img/icons/kebab-menu-3-icon.svg" alt="Logout">
+                        <p>Logout</p>
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section-header">
+                <h1>Grade Report</h1>
+                <h3>Academic Year 2023-2024 | Second Semester</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="section-1">
+                <div class="item-box">
+                    <p>Student Name</p>
+                    <p>Timothy Dionela</p>
+                </div>
+                <div class="item-box">
+                    <p>Program</p>
+                    <p>BSIT 1A</p>
+                </div>
+                <div class="item-box">
+                    <p>Current GPA</p>
+                    <p>2.15</p>
+                </div>
+                <div class="item-box">
+                    <p>Academic Standing</p>
+                    <p>Good</p>
+                </div>
+            </div>
+            <div class="section-2">
+                <table>
+                    <thead>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Instructor</th>
+                        <th>Grade</th>
+                        <th>Remarks</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>O122</td>
+                            <td>Computer Programming 2</td>
+                            <td>Henson Sagorsor</td>
+                            <td><span class="grade good">2.75</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O123</td>
+                            <td>Art Appreciation</td>
+                            <td>Revin Xavier Ignacio</td>
+                            <td><span class="grade bad">3.25</span></td>
+                            <td><span class="remark failed">Failed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O124</td>
+                            <td>Introduction to Human Computer (Lab)</td>
+                            <td>Delia Leon</td>
+                            <td><span class="grade good">1.25</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O125</td>
+                            <td>Statistical Computing</td>
+                            <td>Maria Azucena Lubrica</td>
+                            <td><span class="grade good">1.00</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O126</td>
+                            <td>Understanding the Self</td>
+                            <td>Soujee Ann Mangapac</td>
+                            <td><span class="grade very-bad">5.00</span></td>
+                            <td><span class="remark dropped">Dropped</span></td>
+                        </tr>
+                        <tr>
+                            <td>O127</td>
+                            <td>Web Systems and Technologies 1</td>
+                            <td>Chrisando Paza</td>
+                            <td><span class="grade good">2.50</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O128</td>
+                            <td>National Service Training Program</td>
+                            <td>Eugene Lumasok</td>
+                            <td><span class="grade good">2.25</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O129</td>
+                            <td>Exercise-Based Fitness Activities</td>
+                            <td>C. Aquino</td>
+                            <td><span class="grade good">1.75</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O130</td>
+                            <td>Introduction to Human Computer</td>
+                            <td>Delia Leon</td>
+                            <td><span class="grade good">2.00</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O131</td>
+                            <td>Statistical Computing (Lab)</td>
+                            <td>Maria Azucena Lubrica</td>
+                            <td><span class="grade good">1.50</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O132</td>
+                            <td>Foreign Language</td>
+                            <td>Judelyn Alones</td>
+                            <td><span class="grade good">1.00</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O133</td>
+                            <td>Web Systems and Technologies 1 (Lab)</td>
+                            <td>Chrisando Paza</td>
+                            <td><span class="grade good">2.75</span></td>
+                            <td><span class="remark passed">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>O134</td>
+                            <td>Computer Programming 2 (Lab)</td>
+                            <td>Henson Sagorsor</td>
+                            <td><span class="grade bad">3.25</span></td>
+                            <td><span class="remark failed">Failed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="section-3">
+                <div class="item-box">
+                    <p>Total Units Enrolled</p>
+                    <p>21</p>
+                </div>
+                <div class="item-box">
+                    <p>Total Units Passed</p>
+                    <p>18</p>
+                </div>
+                <div class="item-box">
+                    <p>Semester GPA</p>
+                    <p>2.15</p>
+                </div>
+                <div class="item-box">
+                    <p>Cumulative GPA</p>
+                    <p>2.30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

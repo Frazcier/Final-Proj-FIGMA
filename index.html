@@ -3,82 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="icon" type="image/x-icon" href="ASSETS/LOGO/logo.ico">    
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/LOGO/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>LANDING PAGE</title>
 </head>
 <body>
     <header>
-        <div class="logo">Ikinamada Designs</div>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="assets/img/LOGO/logo.png" alt="CIS Logo" class="nav-logo">
+                <div class="logo-text">Ikinamada Designs</div>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active-link">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a class="button" href="login-student.html">Login</a></li>
+                    <li><a class="button login-btn" href="pages/auth/login.html">Portal Login</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
         <section class="hero">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            
             <div class="hero-content">
-                <h1>Welcome to CIS Student Portal</h1>
-                <p>Ikinamada Designs</p>
-                <button class="button hero-btn pulse"><a href="login-student.html">Enter Portal</a></button>
-            </div>
-        </section>
-        <section class="announcement">
-            <div class="announcement-box fade-in">
-                <div>
-                    <h2>📢 Announcement</h2>
-                    <p>New Officers are elected for the BYTE Organization.</p>
-                    <span>April 28, 2025</span>
-                </div>
-                <div>
-                    <button class="button announcement-btn btn-animated">View Details</button>
+                <span class="badge">2025 Academic Year</span>
+                <h1>Innovating the Future of <br> <span class="gradient-text">Information Sciences</span></h1>
+                <p>Empowering students with cutting-edge technology and a seamless digital campus experience. Manage your academic journey with ease.</p>
+                <div class="hero-buttons">
+                    <a href="pages/auth/login.html" class="button primary-btn pulse">Get Started <i class="fas fa-arrow-right"></i></a>
+                    <a href="about.html" class="button secondary-btn">Learn More</a>
                 </div>
             </div>
+            
+            <div class="hero-visual">
+                <div class="hero-icon-wrapper">
+                    <div class="main-icon-glass">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    
+                    <div class="satellite-icon sat-1" title="Library">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="satellite-icon sat-2" title="Technology">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="satellite-icon sat-3" title="Analytics">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="satellite-icon sat-4" title="Community">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section class="stats-bar">
+            <div class="stat-item">
+                <h3>1,200+</h3>
+                <p>Students Enrolled</p>
+            </div>
+            <div class="stat-item">
+                <h3>3</h3>
+                <p>Major Programs</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Online Integration</p>
+            </div>
+        </section>
+
         <section class="features">
-            <h2>What You Can Access</h2>
+            <div class="section-title">
+                <h2>Everything you need in one place</h2>
+                <p>Our digital ecosystem provides students and staff with powerful tools.</p>
+            </div>
             <div class="features-grid">
-                <div class="feature-card hover-animate">
-                    <i class="fas fa-book"></i>
-                    <h3>Enrolled Subjects</h3>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-book"></i></div>
+                    <h3>Subject Management</h3>
+                    <p>View enrolled subjects, schedules, and instructor details effortlessly.</p>
                 </div>
-                <div class="feature-card hover-animate">
-                    <i class="fas fa-chart-bar"></i>
-                    <h3>Grades Report</h3>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Grade Reports</h3>
+                    <p>Track your academic performance with real-time grade updates and analytics.</p>
                 </div>
-                <div class="feature-card hover-animate">
-                    <i class="fas fa-book-open"></i>
-                    <h3>Libraries</h3>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-layer-group"></i></div>
+                    <h3>Digital Library</h3>
+                    <p>Access thousands of e-books, research papers, and course materials.</p>
                 </div>
-                <div class="feature-card hover-animate">
-                    <i class="fas fa-credit-card"></i>
-                    <h3>Payments</h3>
-                </div>
-                <div class="feature-card hover-animate">
-                    <i class="fa-solid fa-gauge-simple"></i>
-                    <h3>Account Settings</h3>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-wallet"></i></div>
+                    <h3>Easy Payments</h3>
+                    <p>Manage tuition and fees securely through our integrated payment gateway.</p>
                 </div>
             </div>
         </section>
-        <section class="cta">
-            <h2>Ready to Acces Your Portal?</h2>
-            <button class="button cta-btn pulse"><a href="login-student.html"></a>Login Now</button>
-        </section>
+
         <footer>
-            <div class="footer-content">
-                <p>2025 Ikinamada Designs - College of Information Sciences</p>
-                <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Support</a>
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h3>Ikinamada Designs</h3>
+                    <p>College of Information Sciences</p>
+                    <p>La Trinidad, Benguet, Philippines</p>
                 </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ikinamada Designs. All rights reserved.</p>
             </div>
         </footer>
     </main>

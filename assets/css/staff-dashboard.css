@@ -1,171 +1,242 @@
 @import url(global.css);
 
-.welcome-section {
+/***** DASHBOARD GRID LAYOUT *****/
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-dark-text);
+}
+
+
+/***** DASHBOARD CARD COMPONENT *****/
+.dashboard-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.25rem 1.25rem rgba(0,0,0,0.05);
+    border: 0.0625rem solid #f0f0f0;
     display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-
-    & h2 {
-        font-weight: 400;
-    }
-
-    & p {
-        align-self: flex-end;
-    }
-}
-
-.section-1 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 3rem;
-    gap: 2.5rem;
-
-    & :is(.item-box-1, .item-box-2) {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: 50%;
-        padding: 1rem;
-        border-radius: 1rem;
-        box-shadow: 0 0.1rem 0.3rem rgba(51, 51, 51, 0.3);
-
-        & h3 {
-            margin-bottom: 0.4rem;
-        }
-    }
-
-    & .item {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.8rem 1rem;
-        border-radius: 1rem;
-        background-color: var(--background-grey);
-        box-shadow: 0 0.1rem 0.3rem rgba(51, 51, 51, 0.3);
-
-        & .item-detail {
-            display: flex;
-            flex-direction: column;
-
-            & p:first-child {
-                margin-bottom: 0.6rem;
-            }
-
-            & p:last-child  {
-                font-size: 0.8rem;
-                color: rgba(51, 51, 51, 0.5);
-            }
-        }
-
-        & button {
-            padding: 0 2rem;
-            background-color: #9400D3;
-        }
-    }
-    
-    & .item-button {
-        cursor: pointer;
-        padding: 0.8rem 1rem;
-        border-radius: 1rem;
-        background-color: var(--background-grey);
-        box-shadow: 0 0.1rem 0.3rem rgba(51, 51, 51, 0.3);
-
-    }
-
-    & .buttons {
-        display: grid;
-        row-gap: 1.6rem;
-        column-gap: 1rem;
-        text-align: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-
-        & .button {
-            cursor: pointer;
-            padding: 0.8rem 0;
-            border-radius: 0.8rem;
-            background-color: #9400D3;
-
-            & p {
-                color: var(--color-light-text);
-            }
-        }
-    }
-
-    & .item-box-1 {
-        justify-content: space-between;
-    }
-
-    & .item-box-2 {
-        & .search-bar {
-            width: 100%;
-            position: relative;
-            padding: 0 0.6rem;
-            background-color: var(--background-grey);
-            box-shadow: 0 0.1rem 0.3rem rgba(51, 51, 51, 0.3);
-        }
-
-        & input {
-            position: absolute;
-            left: 1.2rem;
-
-            &::placeholder {
-                color: rgba(51, 51, 51, 0.5);
-                font-weight: 400;
-            }
-        }
-    }
-}
-
-.section-2 {
-    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     & h3 {
-        margin-bottom: 1rem;
-    }
-    
-    & table {
-        width: 100%;
-        border-collapse: collapse;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--color-dark-text);
     }
 
-    & thead {
-        & th {
-            padding: 0.6rem 1rem;
-            text-align: left;
-            font-weight: 500;
-            color: rgba(51, 51, 51, 0.5);
-            background-color: var(--background-grey);
-            border-bottom: 0.1rem solid rgba(51, 51, 51, 0.2);
-            
-            &:first-of-type {
-                border-top-left-radius: 0.8rem;
-            }
-            
-            &:last-of-type {
-                border-top-right-radius: 0.8rem;
-            }
+    & .view-link {
+        font-size: 0.85rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/***** SEARCH WRAPPER (SMALL VARIANT) *****/
+.search-wrapper.small {
+    min-width: 12.5rem;
+
+    & input {
+        padding: 0.5rem 1rem 0.5rem 2.2rem;
+        font-size: 0.85rem;
+    }
+
+    & .search-icon {
+        font-size: 0.8rem;
+        left: 0.8rem;
+    }
+}
+
+
+/***** WIDGET 1: QUICK ACTIONS *****/
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.action-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.5rem;
+    background-color: #F9FAFB;
+    border: 0.0625rem solid #E5E7EB;
+    border-radius: 0.8rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    & span {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-dark-text);
+    }
+
+    &:hover {
+        background-color: white;
+        border-color: var(--primary-color);
+        box-shadow: 0 0.25rem 0.75rem rgba(148, 0, 211, 0.15);
+        transform: translateY(-0.125rem);
+    }
+}
+
+
+/***** ICON BOXES (SHARED) *****/
+.icon-box {
+    width: 2.81rem;
+    height: 2.81rem;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+
+    &.purple { 
+        background: rgba(148, 0, 211, 0.1); 
+        color: var(--primary-color); 
+    }
+
+    &.blue   { 
+        background: rgba(59, 130, 246, 0.1); 
+        color: #3B82F6; 
+    }
+
+    &.orange { 
+        background: rgba(249, 115, 22, 0.1); 
+        color: #F97316; 
+    }
+
+    &.green  { 
+        background: rgba(34, 197, 94, 0.1);  
+        color: #22C55E; 
+    }
+}
+
+
+/***** WIDGET 2: ANNOUNCEMENTS *****/
+.announcement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.announcement-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    background-color: #F9FAFB;
+    border: 0.0625rem solid transparent;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: white;
+        border-color: #E5E7EB;
+        box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.05);
+    }
+
+    & .ann-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background: white;
+        border: 0.0625rem solid #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        & img {
+            width: 1.25rem;
+            height: 1.25rem;
         }
     }
 
-    & tbody {
-        & td {
-            padding: 0.8rem 1rem;
-        }
-        
-        & tr {
-            &:not(:last-of-type) {
-                border-bottom: 0.1rem solid rgba(51, 51, 51, 0.2);
-            }
+    & .ann-content {
+        flex: 1;
+
+        & h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: var(--color-dark-text);
         }
 
-        & span {
-            padding: 0.4rem 0.6rem;
+        & p {
             font-size: 0.8rem;
-            border-radius: 2rem;
-            color: var(--color-light-text);
-            background-color: green;
+            color: var(--color-grey-text);
         }
+    }
+}
+
+
+/***** UTILITY BADGES & TEXT *****/
+.status-text.active {
+    color: #166534;
+    font-weight: 600;
+}
+
+.badge-soft {
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.375rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+
+    &.blue   { 
+        background: #EFF6FF; 
+        color: #1D4ED8; 
+    }
+
+    &.purple { 
+        background: #F5F3FF; 
+        color: #7C3AED; 
+    }
+
+    &.orange { 
+        background: #FFF7ED; 
+        color: #C2410C; 
+    }
+
+    &.green  { 
+        background: #F0FDF4; 
+        color: #15803D; 
+    }
+}
+
+
+/***** RESPONSIVE STYLES *****/
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-actions-grid {
+        grid-template-columns: 1fr;
     }
 }

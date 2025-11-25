@@ -1,0 +1,281 @@
+@import url(global.css);
+
+/***** MAIN SIDEBAR CONTAINER *****/
+.sidebar {
+    z-index: 90;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    top: 5rem;
+    width: 17.5rem;
+    left: 0;
+    height: calc(100vh - 5rem);
+    border-right: 0.0625rem solid rgba(0, 0, 0, 0.05);
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    background-color: #ffffff;
+}
+
+
+/***** PROFILE CARD SECTION *****/
+.sidebar-profile {
+    position: relative;
+    z-index: 200;
+    margin-bottom: 1rem;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem;
+    background: #F9FAFB;
+    border-radius: 1rem;
+    border: 0.0625rem solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: var(--secondary-color);
+        background: #FDF4FF;
+    }
+
+    & .profile-img-wrapper {
+        position: relative;
+        width: 2.81rem;
+        height: 2.81rem;
+        flex-shrink: 0;
+
+        & .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 0.125rem solid #fff;
+            box-shadow: 0 0.125rem 0.31rem rgba(0,0,0,0.1);
+        }
+
+        & .status-indicator {
+            position: absolute;
+            bottom: 0.125rem;
+            right: 0.125rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            background-color: #10B981;
+            border: 0.125rem solid #fff;
+            border-radius: 50%;
+        }
+    }
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    line-height: 1.2;
+
+    & h3 {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--color-dark-text);
+        margin: 0 0 0.125rem 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    & .role-label {
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        color: var(--color-grey-text);
+        letter-spacing: 0.03rem;
+        margin-bottom: 0;
+    }
+
+    & .user-id {
+        font-size: 0.75rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+.profile-menu-btn {
+    background: #fff;
+    border: 0.0625rem solid #eee;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+
+    &:hover {
+        background-color: #fff;
+        box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+        transform: translateY(-0.0625rem);
+        border-color: var(--secondary-color);
+    }
+
+    & img {
+        width: 1rem;
+        height: 1rem;
+        object-fit: contain;
+        opacity: 0.6;
+        display: block;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+.sidebar-divider {
+    height: 0.0625rem;
+    background-color: #E5E7EB;
+    margin: 0 0.5rem 1.2rem 0.5rem;
+}
+
+
+/***** NAVIGATION LIST *****/
+.sidebar-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.8rem;
+    color: var(--color-grey-text);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+
+    & .icon-box {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+        flex-shrink: 0;
+    }
+
+    & img {
+        width: 1.375rem;
+        height: 1.375rem;
+        object-fit: contain;
+        opacity: 0.6;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        background-color: rgba(148, 0, 211, 0.05);
+        color: var(--primary-color);
+
+        & img {
+            opacity: 1;
+            transform: scale(1.05);
+            filter: invert(15%) sepia(96%) saturate(4765%) hue-rotate(274deg) brightness(84%) contrast(118%);
+        }
+    }
+
+    &.active {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+        color: white;
+        box-shadow: 0 0.25rem 0.75rem rgba(148, 0, 211, 0.3);
+
+        & img {
+            opacity: 1;
+            filter: brightness(0) invert(1);
+        }
+
+        & span {
+            font-weight: 600;
+        }
+    }
+}
+
+.sidebar-spacer {
+    flex-grow: 1;
+}
+
+
+/***** SIDEBAR TOGGLE MENU (POPUP) *****/
+.sidebar-menu-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.625rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    z-index: 300;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+
+        & .sidebar-dropdown {
+            transform: translateY(0);
+        }
+    }
+
+    & .sidebar-dropdown {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 90%;
+        max-width: 15rem;
+        box-shadow: 0 0.625rem 1.56rem rgba(0,0,0,0.1);
+        transform: translateY(-0.625rem);
+        transition: transform 0.2s ease;
+        background: white;
+        border-radius: 1rem;
+    }
+}
+
+
+/***** RESPONSIVE SIDEBAR *****/
+@media (max-width: 768) {
+    .sidebar {
+        display: none;
+        position: fixed;
+        top: 3.75rem;
+        width: 100%;
+        height: calc(100vh - 3.75rem);
+        z-index: 1000;
+    }
+}

@@ -8,6 +8,10 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/auth-modern.css"/>
     <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
+    <script>
+    // Reset the splash screen flag whenever the user visits the login page
+        sessionStorage.removeItem('splashShown');
+    </script>
     <title>Student Login - School Portal</title>
 </head>
 <body>

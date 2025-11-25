@@ -7,121 +7,17 @@
     <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="../../assets/js/calendar.js" defer></script>
+    <script src="../../assets/js/component-student.js" defer></script>
     <title>STUDENT DASHBOARD UI</title>
 </head>
 <body>
-    <div class="top-navigation">
-        <div class="header">
-            <img src="../../assets/img/logo/logo.png" alt="Ikinamada Designs" class="logo">
-            <h4>Ikinamada Designs</h4>
-        </div>
-        <div class="search-bar">
-            <img src="../../assets/img/icons/search-icon.svg" alt="Search Icon">
-            <input type="text" placeholder="Search...">
-        </div>
-        <div class="icon-bar">
-            <a href="#notification-pop-up"><img src="../../assets/img/icons/notif-icon.svg" alt="Notification" class="icon"></a>
-        </div>
-        <div class="profile">
-            <img src="../../assets/img/profile-pictures/profile.svg" alt="Profile" class="avatar">
-            <h4>Timothy Dionela</h4>
-            <a href="#dropdown-menu"><img src="../../assets/img/icons/arrow-down-icon.svg" alt="Drop Down" class="icon"></a>
-        </div>
-    </div>
-    <div id="notification-pop-up" class="overlay">
-        <a href="#" class="cancel"></a>
-        <div class="pop-up-content">
-            <h3>Notification</h3>
-            <div class="divider"></div>
-            <ul>
-                <li>
-                    <img src="../../assets/img/icons/notif-1-icon.svg" alt="Notification 1">
-                    <div class="detail">
-                        <p class="title">Hi!, Welcome!</p>
-                        <p class="desc">Welcome to the CIS Fam!</p>
-                    </div>
-                </li>
-                <div class="divider"></div>
-                <li>
-                    <img src="../../assets/img/icons/notif-2-icon.svg" alt="Notification 2">
-                    <div class="detail">
-                        <p class="title">Membership Fee</p>
-                        <p class="desc">Just a reminder that you ha...</p>
-                    </div>
-                </li>
-                <div class="divider"></div>
-                <li>
-                    <img src="../../assets/img/icons/notif-3-icon.svg" alt="Notification 3">
-                    <div class="detail">
-                        <p class="title">Notification</p>
-                        <p class="desc">This is a test notification!</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="divider"></div>
-            <h4 class="detail-link"><a href="#">See all notification</a></h4>
-        </div>
-    </div>
-    <div id="dropdown-menu" class="overlay">
-        <a href="#" class="cancel"></a>
-        <div class="pop-up-content">
-            <ul>
-                <a href="../student/account-settings-student.html"><li>
-                    <img src="../../assets/img/icons/kebab-menu-1-icon.svg" alt="Account Settings">
-                    <p>Account Settings</p>
-                </li></a>
-                <div class="divider"></div>
-                <a href="../student/account-settings-student.html"><li>
-                    <img src="../../assets/img/icons/kebab-menu-2-icon.svg" alt="Change Password">
-                    <p>Change Password</p>
-                </li></a>
-                <div class="divider"></div>
-                <a href="../auth/login.html"><li>
-                    <img src="../../assets/img/icons/kebab-menu-3-icon.svg" alt="Logout">
-                    <p>Logout</p>
-                </li></a>
-            </ul>
-        </div>
-    </div>
+    <div id="header-placeholder"></div>
+
     <div class="container">
-        <div class="side-navigation">
-            <div class="profile">
-                <img src="../../assets/img/profile-pictures/profile.svg" alt="Profile" class="avatar">
-                <div class="profile-details">
-                    <h4>Timothy Dionela</h4>
-                    <p>Student</p>
-                </div>
-                <a href="#kebab-menu"><img src="../../assets/img/icons/kebab-menu-icon.svg" alt="Kebab Menu" class="icon"></a>
-            </div>
-            <div class="selection">
-                <ul>
-                    <li class="active">
-                        <img src="../../assets/img/icons/active-dashboard-icon.svg" alt="Dashboard" class="icon">
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <img src="../../assets/img/icons/enrolled-subjects-icon.svg" alt="Enrolled Subjects" class="icon">
-                        <a href="../student/enrolled-subjects.html">Enrolled Subjects</a>
-                    </li>
-                    <li>
-                        <img src="../../assets/img/icons/grade-report-icon.svg" alt="Grades Report" class="icon">
-                        <a href="../student/grade-report.html">Grades Report</a>
-                    </li>
-                    <li>
-                        <img src="../../assets/img/icons/libraries-icon.svg" alt="Libraries" class="icon">
-                        <a href="../student/libraries.html">Libraries</a>
-                    </li>
-                    <li>
-                        <img src="../../assets/img/icons/payments-icon.svg" alt="Payments" class="icon">
-                        <a href="../student/payments.html">Payments</a>
-                    </li>
-                    <li>
-                        <img src="../../assets/img/icons/account-settings-icon.svg" alt="Account Settings" class="icon">
-                        <a href="../student/account-settings-student.html">Account Settings</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+        <div id="sidebar-placeholder"></div>  
+
         <div class="content">
             <div class="section-1">
                 <div class="welcome-section item-1">
@@ -419,7 +315,5 @@
             </div>
         </div>
     </div>
-
-    <script src="../../assets/js/calendar.js"></script>
 </body>
 </html>

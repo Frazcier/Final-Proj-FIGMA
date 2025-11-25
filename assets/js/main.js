@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const overlay = document.getElementById('transition-overlay');
     if (overlay) {
-        // Small delay to ensure the browser is ready to animate
+
         setTimeout(() => {
             document.body.classList.add('page-loaded');
         }, 100);
